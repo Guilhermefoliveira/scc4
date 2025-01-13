@@ -81,10 +81,10 @@ const config = {
       image: 'img/scc4-home.svg',
       navbar: {
         title: 'Home',
-        /* logo: {
+         logo: {
           alt: 'SCC4',
           src: '/img/LogoBranco.svg',
-        }, */
+        },
         items: [
           {
             type: 'docSidebar',
