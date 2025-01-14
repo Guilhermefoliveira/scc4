@@ -77,10 +77,9 @@ const config = {
         defaultMode: 'dark',
         respectPrefersColorScheme: false,
       },
-      // Replace with your project's social card
+      
       image: 'img/scc4-home.svg',
       navbar: {
-        title: 'Home',
          logo: {
           alt: 'SCC4',
           src: '/img/LogoBranco.svg',
@@ -91,12 +90,9 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Docs',
+            to: '/docs/intro',
+            className: 'button button-primary',
           },
-          /* {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          }, */
         ],
       },
       footer: {
@@ -112,34 +108,41 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Links',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Portal Postal',
+                href: 'https://portalpostal.com.br/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'BoxCubo',
+                href: 'https://boxcubo.com.br/',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'SCC4',
+                href: 'https://scc4.com.br/',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Midias Sociais',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Instagram',
+                href: '/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} SCC4 Docs, Inc. Built with Docusaurus.`,
+        // Adicionando a logo no rodapé
+        logo: {
+          alt: 'Logo SCC4',
+          src: 'img/LogoBranco.svg', // Caminho para o arquivo SVG da logo
+          href: '/', // Opcional: link que será aberto ao clicar na logo
+        },
+        copyright: `Copyright © ${new Date().getFullYear()} SCC4 Docs.`,
       },
+      
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,

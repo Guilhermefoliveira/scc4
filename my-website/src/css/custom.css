@@ -29,3 +29,42 @@
   --ifm--ifm-color-darkest: #54c7ec;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.button {
+  background-color: #007bff; 
+  color: #ffffff; 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3; 
+  transform: scale(1.1); 
+}
+
+
+.button-primary {
+  background-color: #26accb; 
+}
+
+.button-primary:hover {
+  background-color: #0fd7fa;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.footer__logo img {
+  max-width: 150px; 
+  height: auto;
+}
