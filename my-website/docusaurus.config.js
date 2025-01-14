@@ -80,9 +80,10 @@ const config = {
       
       image: 'img/scc4-home.svg',
       navbar: {
-         logo: {
+        logo: {
           alt: 'SCC4',
-          src: '/img/LogoBranco.svg',
+          src: '/img/LogoPreto.svg', 
+          srcDark: '/img/LogoBranco.svg',
         },
         items: [
           {
@@ -95,6 +96,7 @@ const config = {
           },
         ],
       },
+
       footer: {
         style: 'dark',
         links: [
