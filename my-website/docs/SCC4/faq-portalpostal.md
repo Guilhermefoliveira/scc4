@@ -90,6 +90,22 @@ Para o **Modelo Padrão**:
 2. Ao Selecionar o Tipo de arquivo, o Portal disponibiliza um arquivo de exemplo, como deve ser seguido esse modelo e especifica os campos que são obrigatórios ter informações. [Exemplo](https://drive.google.com/file/d/1Y9tw39caFbMW0Lt-tV6AHfC0a0Lfgs64/view)
 3. Selecione o arquivo que vai ser Importado, seguindo o tipo que foi definido. [Exemplo](https://drive.google.com/file/d/1suHyDdnaXtaza52__ay8PqJmqMelSom0/view)
 4. Especifique o tipo de serviço que é a importação (Definido no arquivo, PAC, SEDEX, Carta Registrada etc).  [Exemplo](https://drive.google.com/file/d/1u8dY1LBtGkQhx0hJyFmhwwt5O1XYQ0oE/view)
+5. Caso você escolha outros tipos de serviço, diferente de **Definido no arquivo**, precisa marcar os campos de **Medicamento Controlado, VD e AR**.[Exemplo](https://drive.google.com/file/d/1J62dBufZ9YeWZM4K1MRgm7rohd580Dfp/view)
+6. Caso seu arquivo venha com os valores das mercadorias, e você deseja selecionar o valor declarado para objetos acima de cem reais, basta informar no campo **Valores Declarados Maiores Que**, indicando apartir do valor que você quer que o sistema considere. [Exemplo](https://drive.google.com/file/d/1Sg5m4Ope6MXSkU5fm7gUVBR_Q0TuNWhI/view)
+7. Selecione o Departamento (**somente se houver separação por departamento definido no Cliente**). [Exemplo](https://drive.google.com/file/d/1IMkRwJN-OTrcB4ladZo0h-SYQUdunKGu/view)
+8. Com todos os parametros marcados, pode seguir com o botão **Importar Arquivo de Pré-Postagens**. [Exemplo](https://drive.google.com/file/d/1oAIuxMmyjJclLcwizms7BDeddVQ5Gzqb/view)
+9. Realizada a Importação com sucesso, é notificada uma mensagem na tela de confirmação. [Exemplo](https://drive.google.com/file/d/1rypW7ejgWkfqbnInRPm9ZP500AjekWdl/view)
+10. Nessa tela, você consegue verificar todas as **Pré-Postagens importadas**, que após selecionado o botão de **Validar Pré-Postagens** pode acusar algum tipo de erro, como um **CEP inválido** ou **ausência de informações obrigatórias**, é possivel tambem desmarcar alguma linha importada caso haja algum problema sinalizado em vermelho, não afetando o restante que deseja continuar no processo. Para seguir basta ir no botão **Confirmar Pré-Postagens**. [Exemplo](https://drive.google.com/file/d/1Zvs4hng5ZytUkJyNGyYKztp0Ys9cYvVv/view)
+11. Com a confirmação das **Pré-Postagens realizadas**, já é possivel imprimir todas etiquetas geradas indo em **Imprimir Selecionados**. [Exemplo](https://drive.google.com/file/d/1Wt7rDFu_f1-xwPecgmScPVIjQFeVV38_/view)
+
+>### Para continuar nesse passo a passo do **modelo cadastrado** primeiro você deve cadastrar um modelo caso ainda não tenha, seguindo esse tutorial: [Layout de Importação]()
+
+Para o **Modelo Cadastrado**:
+
+1. Selecione o Tipo do arquivo de Importação, conforme o nome do modelo que foi **cadastrado no Layout de Importação**. [Exemplo](https://drive.google.com/file/d/1ap1FQJatuMkkmg2OHWSGKwxEhEW4EbXt/view)
+2. Selecione o arquivo que vai ser Importado, seguindo o tipo cadastrado. [Exemplo](https://drive.google.com/file/d/1suHyDdnaXtaza52__ay8PqJmqMelSom0/view)
+3. Especifique o tipo de serviço que é a importação (Definido no arquivo, PAC, SEDEX, Carta Registrada etc).  [Exemplo](https://drive.google.com/file/d/1u8dY1LBtGkQhx0hJyFmhwwt5O1XYQ0oE/view)
+4. Caso você escolha outros tipos de serviço, diferente de **Definido no arquivo**, precisa Marcar os campos de Medicamento Controlado, VD e AR. [Exemplo](https://drive.google.com/file/d/1J62dBufZ9YeWZM4K1MRgm7rohd580Dfp/view)
 5. Caso seu arquivo venha com os valores das mercadorias, e você deseja selecionar o valor declarado para objetos acima de cem reais, basta informar no campo **Valores Declarados Maiores Que**, indicando apartir do valor que você quer que o sistema considere. [Exemplo](https://drive.google.com/file/d/1Sg5m4Ope6MXSkU5fm7gUVBR_Q0TuNWhI/view)
 6. Selecione o Departamento (**somente se houver separação por departamento definido no Cliente**). [Exemplo](https://drive.google.com/file/d/1IMkRwJN-OTrcB4ladZo0h-SYQUdunKGu/view)
 7. Com todos os parametros marcados, pode seguir com o botão **Importar Arquivo de Pré-Postagens**. [Exemplo](https://drive.google.com/file/d/1oAIuxMmyjJclLcwizms7BDeddVQ5Gzqb/view)
@@ -97,14 +113,17 @@ Para o **Modelo Padrão**:
 9. Nessa tela, você consegue verificar todas as **Pré-Postagens importadas**, que após selecionado o botão de **Validar Pré-Postagens** pode acusar algum tipo de erro, como um **CEP inválido** ou **ausência de informações obrigatórias**, é possivel tambem desmarcar alguma linha importada caso haja algum problema sinalizado em vermelho, não afetando o restante que deseja continuar no processo. Para seguir basta ir no botão **Confirmar Pré-Postagens**. [Exemplo](https://drive.google.com/file/d/1Zvs4hng5ZytUkJyNGyYKztp0Ys9cYvVv/view)
 10. Com a confirmação das **Pré-Postagens realizadas**, já é possivel imprimir todas etiquetas geradas indo em **Imprimir Selecionados**. [Exemplo](https://drive.google.com/file/d/1Wt7rDFu_f1-xwPecgmScPVIjQFeVV38_/view)
 
-Para o **Modelo Cadastrado**:
-
-1.
 ---
 
 ### Posso importar listas de postagens de um arquivo CSV ou Excel?
 
 Sim, o sistema aceita arquivos **CSV** ou **Excel** para importação. Siga o mesmo processo descrito acima para garantir que o formato esteja correto.
+
+---
+
+### É possível personalizar as minhas importações em massa, conforme minhas planilhas estão configuradas?
+
+Sim,
 
 ---
 
