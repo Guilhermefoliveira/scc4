@@ -105,7 +105,7 @@ const config = {
             items: [
               {
                 label: 'SCC4',
-                to: '/docs/category/scc4',
+                to: '/docs/category/geral',
               },
             ],
           },
