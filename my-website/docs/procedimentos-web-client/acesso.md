@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
-# Acesso
+# Acesso ao Sistema Portal Postal
 
-## Acesso ao Sistema
+## Acesso
 
 Após a implantação do sistema, o cliente final terá acesso à plataforma por meio de uma URL específica e credenciais iniciais. Antes disso, a AGF (Agência Franqueada) executa as etapas iniciais necessárias para que o cliente possa utilizar o sistema, realizando o cadastro dos usuários administradores e de um usuário padrão, além de outras configurações básicas.
 
