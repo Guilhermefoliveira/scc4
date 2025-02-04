@@ -67,16 +67,22 @@ Para cadastrar uma nova postagem você deve gerar uma **Etiqueta**, siga o passo
 1. Acesse o painel principal do Portal Postal.
 2. Clique em **Etiquetas**.
 3. Vá em **Gerar Etiquetas**
-4. Selecione o tipo de Postagem: [Exemplo](https://drive.google.com/file/d/1SDD_l3yasi7VMuOBjcLb0ZYQ9aV5uW1j/view)
-5. Após selecionar o tipo de postagem preencha os campos não esquecendo dos obrigatórios: [Exemplo](https://drive.google.com/file/d/1Z3JnaA3Wajkp8dcIT4jwAfMcoN4pKpTi/view)
+4. Selecione o tipo de Postagem: [![Selecione o tipo de postagem](../../static/img/gerar_etiqueta/seleciona_postagem.png "Selecione o tipo de postagem")](https://guilhermefoliveira.github.io/scc4/assets/images/seleciona_postagem-4dd287ce4481c939cb006f7ab8f5f8ba.png)
+
+5. Após selecionar o tipo de postagem preencha os campos não esquecendo dos obrigatórios:
    - Dados do Remetente (Departamento,Setor(Se tiver cadastrado)).
    - Destinatário (nome/razão social, empresa, CPF, CNPJ, e-mail, telefone, CEP, endereço etc.).
    - Dados do Objeto (Caixa ou envelope, Observações, NF ou Declaração de conteúdo).
-   - Serviços Adicionais (AR, VD, MP, AE, AD, DC Entrega no vizinho, RFID). [Exemplo](https://drive.google.com/file/d/18a7pzIArEpj3aw3rS3xzLyMTCetaE8Pf/view)
-6. Revise as informações e clique em **Gerar Etiqueta**. [Exemplo](https://drive.google.com/file/d/1UU3C7P89UsiFBWwFBgzjuQisoLA7kStF/view)
-7. Após revisar as informações na tela, você pode **Confirmar Pré-Postagem**. [Exemplo](https://drive.google.com/file/d/1f4Hzpn1ndSc6KcYDKp_tsWEHpavmbqp0/view)
-8. Ao Realizar a confirmação de Pré-Postagem, já fica disponivel a **Etiqueta** para impressão. [Exemplo](https://drive.google.com/file/d/1hpedM5DvXrF5ikQgr9QASc2E0X5A4qcM/view)
-9. Aqui você já consegue visualizar a impressão da etiqueta, caso tenha AR e seja DC também tem a opção da impressão. [Exemplo](https://drive.google.com/file/d/14p_4tiLLl3Ww1xk3XSbo1hPe3XHrNoUd/view)
+   - Serviços Adicionais (AR, VD, MP, AE, AD, DC Entrega no vizinho, RFID).
+   [![Preencher os campos](../../static/img/gerar_etiqueta/preencher_campos.png "Preencher os Campos do Formulário")](https://guilhermefoliveira.github.io/scc4/assets/images/preencher_campos-4a51ce1f7c02b5ba40ee99737f152cec.png)
+
+6. Revise as informações e clique em **Gerar Etiqueta**. [![Revisar e gerar](../../static/img/gerar_etiqueta/gerar_etiqueta.png "Revisar informações no formulário e gerar a etiqueta")](https://guilhermefoliveira.github.io/scc4/assets/images/gerar_etiqueta-438319698837d1f542274bf28ffa95c7.png)
+
+7. Após revisar as informações na tela, você pode **Confirmar Pré-Postagem**. [![Confirmar Pré-Postagem](../../static/img/gerar_etiqueta/confirmar_pre_postagem.png "Revisar informações novamente e Confirmar Pré-Postagem")](https://guilhermefoliveira.github.io/scc4/assets/images/confirmar_pre_postagem-28780acd97613812ae034402148d49c4.png)
+
+8. Ao Realizar a confirmação de Pré-Postagem, já fica disponivel a **Etiqueta** para impressão. [![Etiqueta disponível para impressão](../../static/img/gerar_etiqueta/imprimir_etiqueta1.png "Após a confirmação da Pré-postagem a etiqueta fica disponivel para impressão")](https://guilhermefoliveira.github.io/scc4/assets/images/imprimir_etiqueta1-16a1503bf4c3e10e99509131e9c24958.png)
+
+9. Aqui você já consegue visualizar a impressão da etiqueta, caso tenha AR e seja DC também tem a opção da impressão. [![Visualizar impressão](../../static/img/gerar_etiqueta/imprimir_etiqueta2.png "Visualizar a impressão e imprimir")](https://guilhermefoliveira.github.io/scc4/assets/images/imprimir_etiqueta2-52d9a00a31e27f36c248bb460daabc91.png)
 
 ---
 
@@ -86,17 +92,27 @@ Sim, o sistema permite o cadastro em massa de postagens utilizando a importaçã
 
 Para o **Modelo Padrão**:
 
-1. Selecione o Tipo do arquivo de Importação. [Exemplo](https://drive.google.com/file/d/1EiV6UYOqMgvuSfeg8S18O0JX7rI_aOkX/view)
-2. Ao Selecionar o Tipo de arquivo, o Portal disponibiliza um arquivo de exemplo, como deve ser seguido esse modelo e especifica os campos que são obrigatórios ter informações. [Exemplo](https://drive.google.com/file/d/1Y9tw39caFbMW0Lt-tV6AHfC0a0Lfgs64/view)
-3. Selecione o arquivo que vai ser Importado, seguindo o tipo que foi definido. [Exemplo](https://drive.google.com/file/d/1suHyDdnaXtaza52__ay8PqJmqMelSom0/view)
-4. Especifique o tipo de serviço que é a importação (Definido no arquivo, PAC, SEDEX, Carta Registrada etc). [Exemplo](https://drive.google.com/file/d/1u8dY1LBtGkQhx0hJyFmhwwt5O1XYQ0oE/view)
-5. Caso você escolha outros tipos de serviço, diferente de **Definido no arquivo**, precisa marcar os campos de **Medicamento Controlado, VD e AR**. [Exemplo](https://drive.google.com/file/d/1J62dBufZ9YeWZM4K1MRgm7rohd580Dfp/view)
-6. Caso seu arquivo venha com os valores das mercadorias, e você deseja selecionar o valor declarado para objetos acima de cem reais, basta informar no campo **Valores Declarados Maiores Que**, indicando apartir do valor que você quer que o sistema considere. [Exemplo](https://drive.google.com/file/d/1Sg5m4Ope6MXSkU5fm7gUVBR_Q0TuNWhI/view)
-7. Selecione o Departamento (**somente se houver separação por departamento definido no Cliente**). [Exemplo](https://drive.google.com/file/d/1IMkRwJN-OTrcB4ladZo0h-SYQUdunKGu/view)
-8. Com todos os parametros marcados, pode seguir com o botão **Importar Arquivo de Pré-Postagens**. [Exemplo](https://drive.google.com/file/d/1oAIuxMmyjJclLcwizms7BDeddVQ5Gzqb/view)
-9. Realizada a Importação com sucesso, é notificada uma mensagem na tela de confirmação. [Exemplo](https://drive.google.com/file/d/1rypW7ejgWkfqbnInRPm9ZP500AjekWdl/view)
-10. Nessa tela, você consegue verificar todas as **Pré-Postagens importadas**, que após selecionado o botão de **Validar Pré-Postagens** pode acusar algum tipo de erro, como um **CEP inválido** ou **ausência de informações obrigatórias**, é possivel tambem desmarcar alguma linha importada caso haja algum problema sinalizado em vermelho, não afetando o restante que deseja continuar no processo. Para seguir basta ir no botão **Confirmar Pré-Postagens**. [Exemplo](https://drive.google.com/file/d/1Zvs4hng5ZytUkJyNGyYKztp0Ys9cYvVv/view)
-11. Com a confirmação das **Pré-Postagens realizadas**, já é possivel imprimir todas etiquetas geradas indo em **Imprimir Selecionados**. [Exemplo](https://drive.google.com/file/d/1Wt7rDFu_f1-xwPecgmScPVIjQFeVV38_/view)
+1. Selecione o Tipo do arquivo de Importação. [![Tipo de arquivo](../../static/img/importar_postagens/definir_tipo.png "Selecione o tipo de arquivo para a importação")](https://guilhermefoliveira.github.io/scc4/assets/images/definir_tipo-d814820ef0a255eb6218d948ed9d5b56.png)
+
+2. Ao Selecionar o Tipo de arquivo, o Portal disponibiliza um arquivo de exemplo, como deve ser seguido esse modelo e especifica os campos que são obrigatórios ter informações.[![Instrucoes de importação](../../static/img/importar_postagens/instrucoes_importacao.png "Modelo de arquivo para importação e instruções")](https://guilhermefoliveira.github.io/scc4/assets/images/instrucoes_importacao-e96fb23790b89b67c6a11d866ba23512.png)
+
+3. Selecione o arquivo que vai ser Importado, seguindo o tipo que foi definido. [![selecione o arquivo](../../static/img/importar_postagens/selecione_os_arquivos.png "Selecione o arquivo para a importação")](https://guilhermefoliveira.github.io/scc4/assets/images/selecione_os_arquivos-03d6d85690a54f99fa2cb5aa95b075d3.png)
+
+4. Especifique o tipo de serviço que é a importação (Definido no arquivo, PAC, SEDEX, Carta Registrada etc). [![Especifique o tipo de serviço](../../static/img/importar_postagens/escolha_servico.png "Especifique o tipo de serviço ")](https://guilhermefoliveira.github.io/scc4/assets/images/escolha_servico-5f773cbfa92bf270ba8e86c4a817c934.png)
+
+5. Caso você escolha outros tipos de serviço, diferente de **Definido no arquivo**, precisa marcar os campos de **Medicamento Controlado, VD e AR**. [![Serviços com adicionais](../../static/img/importar_postagens/ar_vd_mc.png "Marque as opções caso tenha esse tipo de serviço adicional dentro do arquivo")](https://guilhermefoliveira.github.io/scc4/assets/images/ar_vd_mc-b55b3143340ae33d0b7a384204a9212e.png)
+
+6. Caso seu arquivo venha com os valores das mercadorias, e você deseja selecionar o valor declarado para objetos acima de cem reais, basta informar no campo **Valores Declarados Maiores Que**, indicando apartir do valor que você quer que o sistema considere. [![Valores declarados](../../static/img/importar_postagens/valores_declarados_maior.png "Valores declarados")](https://guilhermefoliveira.github.io/scc4/assets/images/valores_declarados_maior-a80d18d0781793cba27f4a8e51fbb07a.png)
+
+7. Selecione o Departamento (**somente se houver separação por departamento definido no Cliente**). [![Selecione o Departamento](../../static/img/importar_postagens/departamento.png "Selecione o Departamento caso o cliente tenha isso ajustado na definição por Departamentos")](https://guilhermefoliveira.github.io/scc4/assets/images/departamento-d515c7c806fb22498b2a74e0f600b75e.png)
+
+8. Com todos os parametros marcados, pode seguir com o botão **Importar Arquivo de Pré-Postagens**. [![Importar arquivo de pré-postagens](../../static/img/importar_postagens/importar_arquivo_prep.png "Botão para importar arquivo de pré-postagem")](https://guilhermefoliveira.github.io/scc4/assets/images/importar_arquivo_prep-aff1640ce47fb5295cf874007540e139.png)
+
+9. Realizada a Importação com sucesso, é notificada uma mensagem na tela de confirmação. [![Importação de arquivo com sucesso](../../static/img/importar_postagens/importado_sucesso.png "Arquivo importado com sucesso!")](https://guilhermefoliveira.github.io/scc4/assets/images/importado_sucesso-733dfd20546637520a238895eba54c12.png)
+
+10. Nessa tela, você consegue verificar todas as **Pré-Postagens importadas**, que após selecionado o botão de **Validar Pré-Postagens** pode acusar algum tipo de erro, como um **CEP inválido** ou **ausência de informações obrigatórias**, é possivel tambem desmarcar alguma linha importada caso haja algum problema sinalizado em vermelho, não afetando o restante que deseja continuar no processo. Para seguir basta ir no botão **Confirmar Pré-Postagens**. [![Validar e confirmar pré-postagens](../../static/img/importar_postagens/validar_confirmar_pre.png "Verificar se não contem algum erro nas postagens importadas e após verificado já consegue confirmar a pré-postagens")](https://guilhermefoliveira.github.io/scc4/assets/images/validar_confirmar_pre-f4d01386a72e58bcac5e669d34baa822.png)
+
+11. Com a confirmação das **Pré-Postagens realizadas**, já é possivel imprimir todas etiquetas geradas indo em **Imprimir Selecionados**. [![Imprimir etiquetas selecionadas](../../static/img/importar_postagens/imprimir_selecionados.png "Todas etiquetas geradas, e disponiveis para impressão")](https://guilhermefoliveira.github.io/scc4/assets/images/imprimir_selecionados-d53e5bb40b0b10662f5d6210815dbd48.png)
 
 >### Para continuar nesse passo a passo do **modelo cadastrado** primeiro você deve cadastrar um modelo caso ainda não tenha, seguindo esse tutorial: [Layout de Importação](https://guilhermefoliveira.github.io/scc4/docs/SCC4/faq-portalpostal/#%C3%A9-poss%C3%ADvel-personalizar-as-minhas-importa%C3%A7%C3%B5es-em-massa-conforme-minhas-planilhas-est%C3%A3o-configuradas)
 
