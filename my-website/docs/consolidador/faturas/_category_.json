@@ -1,0 +1,8 @@
+{
+  "label": "Faturas",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Faturas"
+  }
+}

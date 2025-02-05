@@ -1,0 +1,8 @@
+{
+  "label": "Relatorios",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Relatórios do Consolidador de Faturas"
+  }
+}
