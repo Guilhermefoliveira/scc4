@@ -60,6 +60,23 @@ Os requisitos técnicos incluem:
 
 ## Cadastro e Gestão de Postagens
 
+### **Atenção: Importante para o correto funcionamento do sistema**
+
+Para evitar erros durante a importação de arquivos ou no preenchimento manual de etiquetas no portal postal, siga rigorosamente as orientações abaixo:
+
+1. **Campos obrigatórios:**  
+   - Certifique-se de que todas as informações estejam preenchidas de acordo com os campos obrigatórios exigidos pelo sistema.
+
+2. **Respeito ao padrão de escrita:**  
+   - Utilize o formato correto para cada campo. Por exemplo, o campo **UF** deve ser preenchido com a sigla (como "SP", "RJ", "MG") e **não** com o nome do estado por extenso.
+
+3. **Atenção aos caracteres especiais:**  
+   - Evite caracteres especiais, como exemplo de aspas (**" "**), ao redor dos dados nos campos, pois isso pode gerar falhas na validação.
+
+**Importante:** A não conformidade com essas diretrizes pode resultar em erros tanto na importação dos arquivos quanto no preenchimento das etiquetas. Por isso, revise atentamente seus arquivos antes de importá-los.
+
+---
+
 ### Como cadastro uma nova postagem no sistema?
 
 Para cadastrar uma nova postagem você deve gerar uma **Etiqueta**, siga o passo a passo:
@@ -71,7 +88,7 @@ Para cadastrar uma nova postagem você deve gerar uma **Etiqueta**, siga o passo
 
 5. Após selecionar o tipo de postagem preencha os campos não esquecendo dos obrigatórios:
    - Dados do Remetente (Departamento,Setor(Se tiver cadastrado)).
-   - Destinatário (nome/razão social, empresa, CPF, CNPJ, e-mail, telefone, CEP, endereço etc.).
+   - Destinatário (nome/razão social, empresa, CPF, CNPJ, e-mail, telefone, CEP, UF(Não deve ser escrita por extenso), endereço etc.).
    - Dados do Objeto (Caixa ou envelope, Observações, NF ou Declaração de conteúdo).
    - Serviços Adicionais (AR, VD, MP, AE, AD, DC Entrega no vizinho, RFID).
    [![Preencher os campos](../../static/img/gerar_etiqueta/preencher_campos.png "Preencher os Campos do Formulário")](https://guilhermefoliveira.github.io/scc4/assets/images/preencher_campos-4a51ce1f7c02b5ba40ee99737f152cec.png)
@@ -89,6 +106,8 @@ Para cadastrar uma nova postagem você deve gerar uma **Etiqueta**, siga o passo
 ### É possível cadastrar postagens em massa? Como faço isso?
 
 Sim, o sistema permite o cadastro em massa de postagens utilizando a importação de arquivos em formatos como **CSV**, **Excel**, **XML** e outros. Para isso existe dois métodos de importação, modelo padrão ou modelo cadastrado.
+
+---
 
 Para o **Modelo Padrão**:
 

@@ -1,0 +1,8 @@
+{
+  "label": "Minha Conta",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Minha Conta"
+  }
+}

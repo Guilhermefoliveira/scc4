@@ -2,7 +2,7 @@
 sidebar_position: 0
 ---
 
-# Acesso ao Sistema Portal Postal
+# Acesso ao Sistema Portal Postal Web - Cliente
 
 ## Acesso
 
@@ -10,6 +10,7 @@ Após a implantação do sistema, o cliente final terá acesso à plataforma por
 
 ### Acesso via Navegador
 
+- **Tela de Acesso**, exemplo: [![Tela de Login Web Agência](../../static/img/web_cliente/login-pp.png "Tela de Login Web Agência")](https://guilhermefoliveira.github.io/scc4/assets/images/login-pp-91d3492c3e3c106d52a983f30202b73e.png)
 - **URL de Acesso:** [https://portalpostal.com.br/v2/extra/login](https://portalpostal.com.br/v2/extra/login)
 
 Acesse o sistema utilizando um navegador de internet (Chrome, Firefox ou outro de sua preferência), digitando o endereço acima.

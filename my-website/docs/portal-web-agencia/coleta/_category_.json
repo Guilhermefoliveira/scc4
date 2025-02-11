@@ -1,8 +1,8 @@
 {
-  "label": "Consolidador",
+  "label": "Coleta",
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Consolidador"
+    "description": "Coleta"
   }
 }
