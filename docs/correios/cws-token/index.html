@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-BR" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-correios/cws-token" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Geração do Token nos Correios CWS / Cadastro do Portal Postal | Documentação SCC4</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://Guilhermefoliveira.github.io/scc4/img/scc4-home.svg"><meta data-rh="true" name="twitter:image" content="https://Guilhermefoliveira.github.io/scc4/img/scc4-home.svg"><meta data-rh="true" property="og:url" content="https://Guilhermefoliveira.github.io/scc4/docs/correios/cws-token"><meta data-rh="true" property="og:locale" content="pt_BR"><meta data-rh="true" name="docusaurus_locale" content="pt-BR"><meta data-rh="true" name="docsearch:language" content="pt-BR"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Geração do Token nos Correios CWS / Cadastro do Portal Postal | Documentação SCC4"><meta data-rh="true" name="description" content="1. Introdução"><meta data-rh="true" property="og:description" content="1. Introdução"><link data-rh="true" rel="icon" href="/scc4/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://Guilhermefoliveira.github.io/scc4/docs/correios/cws-token"><link data-rh="true" rel="alternate" href="https://Guilhermefoliveira.github.io/scc4/docs/correios/cws-token" hreflang="pt-BR"><link data-rh="true" rel="alternate" href="https://Guilhermefoliveira.github.io/scc4/docs/correios/cws-token" hreflang="x-default"><link rel="stylesheet" href="/scc4/assets/css/styles.988c2e27.css">
+<script src="/scc4/assets/js/runtime~main.da2ada1e.js" defer="defer"></script>
+<script src="/scc4/assets/js/main.2a213e2c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"dark")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/scc4/img/LogoPreto.svg"><link rel="preload" as="image" href="/scc4/img/LogoBranco.svg"><div role="region" aria-label="Pular para o conteúdo principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Pular para o conteúdo principal</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Alternar a barra de navegação" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/scc4/"><div class="navbar__logo"><img src="/scc4/img/LogoPreto.svg" alt="SCC4" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/scc4/img/LogoBranco.svg" alt="SCC4" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a><a aria-current="page" class="navbar__item navbar__link button button-primary navbar__link--active" href="/scc4/docs/category/geral">Docs</a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Alterar entre os modos claro e escuro (modo modo escuro ativado)" aria-label="Alterar entre os modos claro e escuro (modo modo escuro ativado)" aria-live="polite" aria-pressed="true"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volte para o topo" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/scc4/docs/category/geral">Geral</a><button aria-label="Expandir a categoria lateral &#x27;Geral&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/scc4/docs/category/portal-web-client">Portal Web Client</a><button aria-label="Expandir a categoria lateral &#x27;Portal Web Client&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/scc4/docs/category/portal-web-agência">Portal Web Agência</a><button aria-label="Expandir a categoria lateral &#x27;Portal Web Agência&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/scc4/docs/category/consolidador">Consolidador</a><button aria-label="Expandir a categoria lateral &#x27;Consolidador&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/scc4/docs/category/correios">Correios</a><button aria-label="Fechar a categoria lateral &#x27;Correios&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/scc4/docs/correios/ppn">Pré-Postagem Nacional (PPN) – Visão Geral e Regras de Negócio</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/scc4/docs/correios/cws-token">Geração do Token nos Correios CWS / Cadastro do Portal Postal</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/scc4/docs/correios/boas-praticas">Boas Práticas de Operação Correios</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/scc4/docs/category/faq-perguntas-e-respostas">FAQ Perguntas e Respostas</a><button aria-label="Expandir a categoria lateral &#x27;FAQ Perguntas e Respostas&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Página Inicial" class="breadcrumbs__link" href="/scc4/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/scc4/docs/category/correios"><span itemprop="name">Correios</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Geração do Token nos Correios CWS / Cadastro do Portal Postal</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Nessa página</button></div><div class="theme-doc-markdown markdown"><header><h1>Geração do Token nos Correios CWS / Cadastro do Portal Postal</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-introdução"><strong>1. Introdução</strong><a href="#1-introdução" class="hash-link" aria-label="Link direto para 1-introdução" title="Link direto para 1-introdução">​</a></h2>
+<p>Esta documentação descreve o processo de login, geração de token e autenticação no CWS - Correios, além das orientações para cadastramento de API e cartão de postagem. Este guia destina-se a AGFs e clientes que precisam acessar os serviços dos Correios via API.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-acesso-ao-cws-central-authentication-service---cas"><strong>2. Acesso ao CWS (Central Authentication Service - CAS)</strong><a href="#2-acesso-ao-cws-central-authentication-service---cas" class="hash-link" aria-label="Link direto para 2-acesso-ao-cws-central-authentication-service---cas" title="Link direto para 2-acesso-ao-cws-central-authentication-service---cas">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-login-no-cws"><strong>2.1 Login no CWS</strong><a href="#21-login-no-cws" class="hash-link" aria-label="Link direto para 21-login-no-cws" title="Link direto para 21-login-no-cws">​</a></h3>
+<ol>
+<li>
+<p>Acesse o portal do <strong>CWS - Correios</strong>.<br>
+<a href="https://cas.correios.com.br/login?service=https%3A%2F%2Fcws.correios.com.br%2Flogin%2Fcas" target="_blank" rel="noopener noreferrer"><img decoding="async" loading="lazy" alt="Login no Correios CWS" src="/scc4/assets/images/login-cws-6d9b1a2a692445d937a147efd88df499.png" title="Faça login no correios CWS" width="1918" height="919" class="img_ev3q"></a><br>
+<a href="https://cas.correios.com.br/login?service=https%3A%2F%2Fcws.correios.com.br%2Flogin%2Fcas" target="_blank" rel="noopener noreferrer">Login - CAS - Central Authentication Service</a></p>
+</li>
+<li>
+<p>Utilize o <strong>IDCorreios</strong> para autenticação.</p>
+<ul>
+<li>Se o cliente não possuir o IDCorreios, ele deve verificar com a <strong>ECT</strong> como obter credenciais de acesso.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-menu-de-ajuda"><strong>2.2 Menu de Ajuda</strong><a href="#22-menu-de-ajuda" class="hash-link" aria-label="Link direto para 22-menu-de-ajuda" title="Link direto para 22-menu-de-ajuda">​</a></h3>
+<ul>
+<li>O próprio CWS possui um <strong>Menu de Ajuda</strong>, onde há um passo a passo explicando como gerar e autenticar o token.</li>
+<li>O Portal Postal também disponibilizará esse guia.</li>
+<li>Se houver dúvidas mesmo após a consulta do Menu de Ajuda, o cliente ou AGF deve entrar em contato com o <strong>suporte do Portal Postal</strong>.</li>
+</ul>
+<p><a href="https://scc4.atlassian.net/48d12b24-49dd-4619-9a8e-6a0c00e81d21id=ecbfe311-6c55-41f6-b322-ec363473a642&amp;collection=contentId-4325434&amp;contextId=4325434&amp;mimeType=image%2Fpng&amp;name=image-20240207-180641.png&amp;size=536652&amp;width=1600&amp;height=903&amp;alt=image-20240207-180641.png" target="_blank" rel="noopener noreferrer"><img decoding="async" loading="lazy" alt="Menu Ajuda Correios" src="/scc4/assets/images/menu-ajuda-60a25ef3f1ed4f9c9ee34c80bebcdee6.png" title="No caso de duvidas, pode acessar o menu ajuda no site dos correios" width="1280" height="722" class="img_ev3q"></a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-gestão-de-acesso-às-apis"><strong>3. Gestão de Acesso às APIs</strong><a href="#3-gestão-de-acesso-às-apis" class="hash-link" aria-label="Link direto para 3-gestão-de-acesso-às-apis" title="Link direto para 3-gestão-de-acesso-às-apis">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-copiando-o-login-e-senha-para-api"><strong>3.1 Copiando o Login e Senha para API</strong><a href="#31-copiando-o-login-e-senha-para-api" class="hash-link" aria-label="Link direto para 31-copiando-o-login-e-senha-para-api" title="Link direto para 31-copiando-o-login-e-senha-para-api">​</a></h3>
+<p><a href="https://scc4.atlassian.net/48d12b24-49dd-4619-9a8e-6a0c00e81d21id=ecbfe311-6c55-41f6-b322-ec363473a642&amp;collection=contentId-4325434&amp;contextId=4325434&amp;mimeType=image%2Fpng&amp;name=image-20240207-180641.png&amp;size=536652&amp;width=1600&amp;height=903&amp;alt=image-20240207-180641.png" target="_blank" rel="noopener noreferrer"><img decoding="async" loading="lazy" alt="Gestao de acesso api" src="/scc4/assets/images/gestao-acesso-api-50cb8ed3e7dbd37bc25d425545979e77.png" title="Insira suas credenciais id correios" width="1280" height="720" class="img_ev3q"></a></p>
+<ol>
+<li>
+<p>No campo <strong>&quot;Usuário do Portal Meu Correios&quot;</strong>, copie o login exibido (este é o <strong>login da API</strong>).</p>
+<ul>
+<li>Salve esse login em um bloco de notas, para utilizá-lo posteriormente na tela de contrato ECT do Portal Postal.</li>
+</ul>
+</li>
+<li>
+<p>No campo <strong>&quot;Senha do Portal Meu Correios&quot;</strong>, insira a mesma senha usada para acessar o CWS.</p>
+</li>
+<li>
+<p><strong>Insira a senha</strong> (a mesma utilizada no CWS) e clique em <strong>&quot;Regerar Código&quot;</strong>.</p>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="32-gerando-o-token"><strong>3.2 Gerando o Token</strong><a href="#32-gerando-o-token" class="hash-link" aria-label="Link direto para 32-gerando-o-token" title="Link direto para 32-gerando-o-token">​</a></h3>
+<ol>
+<li>
+<p>Se um token já existir, o sistema exibirá uma mensagem de confirmação. Clique em <strong>&quot;Sim&quot;</strong> para gerar um <strong>novo token</strong>.</p>
+</li>
+<li>
+<p>O CWS exibirá o <strong>novo token</strong>. Copie e salve este token em um local seguro, pois ele será utilizado para:</p>
+<ul>
+<li><strong>Autenticação</strong> no CWS.</li>
+<li><strong>Cadastro</strong> na tela de contrato ECT na Web da Agência.</li>
+<li><strong>Configuração</strong> no Portal Postal (inserido como <strong>senha</strong> da API).</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="33-apis-habilitadas"><strong>3.3 APIs Habilitadas</strong><a href="#33-apis-habilitadas" class="hash-link" aria-label="Link direto para 33-apis-habilitadas" title="Link direto para 33-apis-habilitadas">​</a></h3>
+<ol>
+<li><strong>Permaneça</strong> na tela de <strong>Credenciais</strong> e insira o <strong>token</strong> recém-gerado (ou utilize um token válido já existente), juntamente com o <strong>cartão de postagem</strong>, <strong>utilizando um duplo 00 na frente</strong> da numeração.</li>
+<li><strong>Feche</strong> a janela após a configuração. Em seguida, ao passar o mouse sobre o botão <strong>Credenciais</strong>, o CWS exibirá os serviços que o cliente tem liberados:<!-- -->
+<ul>
+<li>Caso haja APIs <strong>liberadas</strong>, elas aparecerão listadas.</li>
+<li>Se <strong>não</strong> houver APIs habilitadas, o cliente terá acesso apenas a:<!-- -->
+<ul>
+<li><strong>Consulta de Preços e Prazos</strong></li>
+<li><strong>Consulta de Imagem do Comprovante Eletrônico</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-erros-comuns-e-soluções"><strong>4. Erros Comuns e Soluções</strong><a href="#4-erros-comuns-e-soluções" class="hash-link" aria-label="Link direto para 4-erros-comuns-e-soluções" title="Link direto para 4-erros-comuns-e-soluções">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="erro-acesso-negado-verifique-o-usuário-e-senha-informados-status-401"><strong>Erro &quot;Acesso negado. Verifique o usuário e senha informados. STATUS 401&quot;</strong><a href="#erro-acesso-negado-verifique-o-usuário-e-senha-informados-status-401" class="hash-link" aria-label="Link direto para erro-acesso-negado-verifique-o-usuário-e-senha-informados-status-401" title="Link direto para erro-acesso-negado-verifique-o-usuário-e-senha-informados-status-401">​</a></h3>
+<ul>
+<li>Esse erro não está relacionado ao <strong>Portal Postal</strong>.</li>
+<li>Solução recomendada:<!-- -->
+<ol>
+<li>Pressione <strong>CTRL + F5</strong> e refaça o processo na mesma tela.</li>
+<li>Se o erro persistir, aguarde alguns minutos e tente novamente.</li>
+<li>Caso o problema continue, entre em contato com a <strong>ECT</strong>.</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-cadastro-do-cartão-de-postagem-e-autenticação-na-api"><strong>5. Cadastro do Cartão de Postagem e Autenticação na API</strong><a href="#5-cadastro-do-cartão-de-postagem-e-autenticação-na-api" class="hash-link" aria-label="Link direto para 5-cadastro-do-cartão-de-postagem-e-autenticação-na-api" title="Link direto para 5-cadastro-do-cartão-de-postagem-e-autenticação-na-api">​</a></h2>
+<ol>
+<li>
+<p>Acesse a tela de <strong>Início</strong> do CWS e clique em <strong>Credenciais</strong>.</p>
+</li>
+<li>
+<p>No campo <strong>Cartão de Postagem</strong>, insira o cartão de postagem <strong>utilizando um duplo 00 na frente</strong>.</p>
+<ul>
+<li>
+<p>Caso o cliente não tenha um cartão diferente, utilize o mesmo cartão de postagem.</p>
+</li>
+<li>
+<p><strong>Quando for inserir o cartão de postagem no Portal Postal, não cadastre com o duplo &quot;00&quot;.</strong></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cadastrar login da API e token no Portal Postal:</strong></p>
+<ul>
+<li>No campo <strong>Login da API</strong>, insira o <strong>login</strong> copiado (usuário do Portal Meu Correios).</li>
+<li>No campo <strong>Senha</strong>, insira o <strong>token</strong> gerado anteriormente.</li>
+</ul>
+</li>
+<li>
+<p><strong>Finalização:</strong></p>
+<ul>
+<li>Se o AGF estiver fazendo o cadastro para o cliente, o acesso estará liberado após este processo.</li>
+<li><strong>Atenção</strong>: Se o cliente usa este login e token em outro sistema, o AGF deve orientá-lo a atualizar os dados no outro sistema, pois a alteração do token pode causar falhas de autenticação.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-processo-pelo-cliente-acesso-web"><strong>6. Processo pelo Cliente (Acesso Web)</strong><a href="#6-processo-pelo-cliente-acesso-web" class="hash-link" aria-label="Link direto para 6-processo-pelo-cliente-acesso-web" title="Link direto para 6-processo-pelo-cliente-acesso-web">​</a></h2>
+<p>Caso o cliente deseje realizar o processo diretamente pelo próprio acesso, ele deve:</p>
+<ol>
+<li>Acessar o portal Web do Cliente.</li>
+<li>Ir até <strong>Cadastro &gt; Dados da Empresa &gt; Login da API IDCORREIOS</strong>.</li>
+<li>Cadastrar:<!-- -->
+<ul>
+<li><strong>Login da API</strong></li>
+<li><strong>Senha/Token</strong></li>
+<li><strong>Cartão de postagem</strong> (seguindo a mesma regra de <strong>não</strong> usar o duplo &quot;00&quot;)</li>
+</ul>
+</li>
+</ol>
+<p><strong>⚠ Importante:</strong><br>
+<!-- -->Se o cliente usa esse login e token em outro sistema, ele deve atualizá-los no outro sistema, pois qualquer alteração de token pode invalidar a autenticação nos serviços integrados.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-suporte"><strong>7. Suporte</strong><a href="#7-suporte" class="hash-link" aria-label="Link direto para 7-suporte" title="Link direto para 7-suporte">​</a></h2>
+<p>Se houver qualquer dúvida ou erro que não seja resolvido pelas etapas descritas, o cliente ou AGF deve entrar em contato com:</p>
+<ul>
+<li><strong>Menu de Ajuda do CWS</strong></li>
+<li><strong>Suporte do Portal Postal</strong></li>
+<li><strong>Correios (ECT)</strong>, caso o problema esteja relacionado ao IDCorreios ou credenciais de acesso</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="8-considerações-finais"><strong>8. Considerações Finais</strong><a href="#8-considerações-finais" class="hash-link" aria-label="Link direto para 8-considerações-finais" title="Link direto para 8-considerações-finais">​</a></h3>
+<p>Esta documentação visa facilitar o acesso e autenticação ao CWS dos Correios, bem como a geração de token e integração com APIs. Seguindo os passos corretamente, o processo deve ocorrer sem problemas.</p>
+<hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/correios/cws-token.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar essa página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Páginas de documentação"><a class="pagination-nav__link pagination-nav__link--prev" href="/scc4/docs/correios/ppn"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Pré-Postagem Nacional (PPN) – Visão Geral e Regras de Negócio</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/scc4/docs/correios/boas-praticas"><div class="pagination-nav__sublabel">Próxima</div><div class="pagination-nav__label">Boas Práticas de Operação Correios</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-introdução" class="table-of-contents__link toc-highlight"><strong>1. Introdução</strong></a></li><li><a href="#2-acesso-ao-cws-central-authentication-service---cas" class="table-of-contents__link toc-highlight"><strong>2. Acesso ao CWS (Central Authentication Service - CAS)</strong></a><ul><li><a href="#21-login-no-cws" class="table-of-contents__link toc-highlight"><strong>2.1 Login no CWS</strong></a></li><li><a href="#22-menu-de-ajuda" class="table-of-contents__link toc-highlight"><strong>2.2 Menu de Ajuda</strong></a></li></ul></li><li><a href="#3-gestão-de-acesso-às-apis" class="table-of-contents__link toc-highlight"><strong>3. Gestão de Acesso às APIs</strong></a><ul><li><a href="#31-copiando-o-login-e-senha-para-api" class="table-of-contents__link toc-highlight"><strong>3.1 Copiando o Login e Senha para API</strong></a></li><li><a href="#32-gerando-o-token" class="table-of-contents__link toc-highlight"><strong>3.2 Gerando o Token</strong></a></li><li><a href="#33-apis-habilitadas" class="table-of-contents__link toc-highlight"><strong>3.3 APIs Habilitadas</strong></a></li></ul></li><li><a href="#4-erros-comuns-e-soluções" class="table-of-contents__link toc-highlight"><strong>4. Erros Comuns e Soluções</strong></a><ul><li><a href="#erro-acesso-negado-verifique-o-usuário-e-senha-informados-status-401" class="table-of-contents__link toc-highlight"><strong>Erro &quot;Acesso negado. Verifique o usuário e senha informados. STATUS 401&quot;</strong></a></li></ul></li><li><a href="#5-cadastro-do-cartão-de-postagem-e-autenticação-na-api" class="table-of-contents__link toc-highlight"><strong>5. Cadastro do Cartão de Postagem e Autenticação na API</strong></a></li><li><a href="#6-processo-pelo-cliente-acesso-web" class="table-of-contents__link toc-highlight"><strong>6. Processo pelo Cliente (Acesso Web)</strong></a></li><li><a href="#7-suporte" class="table-of-contents__link toc-highlight"><strong>7. Suporte</strong></a><ul><li><a href="#8-considerações-finais" class="table-of-contents__link toc-highlight"><strong>8. Considerações Finais</strong></a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Home</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/scc4/docs/category/geral">SCC4</a></li></ul></div><div class="col footer__col"><div class="footer__title">Links</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://portalpostal.com.br/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Portal Postal<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://boxcubo.com.br/" target="_blank" rel="noopener noreferrer" class="footer__link-item">BoxCubo<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://scc4.com.br/" target="_blank" rel="noopener noreferrer" class="footer__link-item">SCC4<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Midias Sociais</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/scc4/">Instagram</a></li></ul></div></div><div class="footer__bottom text--center"><div class="margin-bottom--sm"><a class="footerLogoLink_BH7S" href="/scc4/"><img src="/scc4/img/LogoBranco.svg" alt="Logo SCC4" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE"><img src="/scc4/img/LogoBranco.svg" alt="Logo SCC4" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU"></a></div><div class="footer__copyright">Copyright © 2025 SCC4 Docs.</div></div></div></footer></div>
+</body>
+</html>
