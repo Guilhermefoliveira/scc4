@@ -40,13 +40,7 @@ const app = initializeApp(firebaseConfig);
  */
 export const auth = getAuth(app);
 
-// Conditionally initialize Analytics only on the client-side
-// let analytics; // Original problematic line
-// if (typeof window !== 'undefined') { // Original problematic block
-// analytics = getAnalytics(app);
-// }
-
-let analyticsInstance; // Use a different name to avoid potential conflicts
+let analyticsInstance; 
 
 if (ExecutionEnvironment.canUseDOM) {
   import('firebase/analytics').then(firebaseAnalyticsModule => {
