@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 // @ts-check
 // `@type` JSDoc annotations allow editor autocompletion and type checking
 // (when paired with `@ts-check`).
@@ -15,10 +17,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://Guilhermefoliveira.github.io',
+  url: 'https://docs-scc4.web.app',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/scc4/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -92,7 +94,7 @@ const config = {
             position: 'left',
             label: 'Docs',
             to: '/docs/intro',
-            className: 'button button-primary',
+            className: 'button',
           },
         ],
       },
@@ -131,17 +133,17 @@ const config = {
             items: [
               {
                 label: 'Instagram',
-                href: '/',
+                href: '/', // Consider updating this to your Instagram profile URL
               },
             ],
           },
         ],
         // Adicionando a logo no rodapé
-        logo: {
-          alt: 'Logo SCC4',
+        /* logo: {
+          alt: '',
           src: 'img/LogoBranco.svg', // Caminho para o arquivo SVG da logo
           href: '/', // Opcional: link que será aberto ao clicar na logo
-        },
+        }, */
         copyright: `Copyright © ${new Date().getFullYear()} SCC4 Docs.`,
       },
       
@@ -150,6 +152,34 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+  plugins: [
+    function DocusaurusFirebaseEnvPlugin(context, options) {
+      return {
+        name: 'docusaurus-firebase-env-plugin',
+        configureWebpack(config, isServer, utils) {
+          // DefinePlugin só deve ser aplicado ao build do cliente
+          if (isServer) {
+            return {};
+          }
+          const webpack = require('webpack');
+          return {
+            plugins: [
+              new webpack.DefinePlugin({
+                'process.env.DOCUSAURUS_FIREBASE_API_KEY': JSON.stringify(process.env.DOCUSAURUS_FIREBASE_API_KEY),
+                'process.env.DOCUSAURUS_FIREBASE_AUTH_DOMAIN': JSON.stringify(process.env.DOCUSAURUS_FIREBASE_AUTH_DOMAIN),
+                'process.env.DOCUSAURUS_FIREBASE_DATABASE_URL': JSON.stringify(process.env.DOCUSAURUS_FIREBASE_DATABASE_URL),
+                'process.env.DOCUSAURUS_FIREBASE_PROJECT_ID': JSON.stringify(process.env.DOCUSAURUS_FIREBASE_PROJECT_ID),
+                'process.env.DOCUSAURUS_FIREBASE_STORAGE_BUCKET': JSON.stringify(process.env.DOCUSAURUS_FIREBASE_STORAGE_BUCKET),
+                'process.env.DOCUSAURUS_FIREBASE_MESSAGING_SENDER_ID': JSON.stringify(process.env.DOCUSAURUS_FIREBASE_MESSAGING_SENDER_ID),
+                'process.env.DOCUSAURUS_FIREBASE_APP_ID': JSON.stringify(process.env.DOCUSAURUS_FIREBASE_APP_ID),
+                'process.env.DOCUSAURUS_FIREBASE_MEASUREMENT_ID': JSON.stringify(process.env.DOCUSAURUS_FIREBASE_MEASUREMENT_ID),
+              })
+            ]
+          };
+        },
+      };
+    },
+  ],
 };
 
 export default config;

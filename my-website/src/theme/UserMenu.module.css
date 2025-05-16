@@ -1,0 +1,259 @@
+.userMenu {
+  position: fixed;
+  top: 12px;
+  right: 60px; /* Espaço para o botão de tema */
+  z-index: 1000;
+}
+
+.userButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.userButton:hover {
+  background: var(--ifm-color-primary-darker);
+  transform: scale(1.05);
+}
+
+.userAvatar {
+  width: 24px;
+  height: 24px;
+  background: white;
+  color: var(--ifm-color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.userEmail {
+  display: none; /* Esconde o email no botão */
+}
+
+.arrowIcon {
+  display: none; /* Remove a seta */
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 240px;
+  z-index: 1000;
+  animation: slideDown 0.2s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Ajustes específicos para tema claro */
+[data-theme='light'] .dropdownMenu {
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes específicos para tema escuro */
+[data-theme='dark'] .dropdownMenu {
+  background: rgba(33, 33, 33, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.menuHeader {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--ifm-color-emphasis-50);
+}
+
+[data-theme='light'] .menuHeader {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+[data-theme='dark'] .menuHeader {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.menuAvatar {
+  width: 40px;
+  height: 40px;
+  background: var(--ifm-color-primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.menuUserInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.menuEmail {
+  display: block;
+  font-size: 14px;
+  color: var(--ifm-color-emphasis-700);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menuDivider {
+  height: 1px;
+  background: var(--ifm-color-emphasis-200);
+  margin: 4px 0;
+}
+
+[data-theme='light'] .menuDivider {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .menuDivider {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+[data-theme='light'] .menuItem {
+  color: var(--ifm-color-emphasis-800);
+}
+
+[data-theme='light'] .menuItem:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .menuItem:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ifm-color-primary);
+}
+
+.menuIcon {
+  color: currentColor;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .userMenu {
+    top: 12px; /* Ajustado para ficar alinhado com o botão de tema */
+    right: 50px;
+  }
+
+  .userButton {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .userAvatar {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .dropdownMenu {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+    animation: slideUp 0.2s ease;
+    max-height: 80vh; /* Limita a altura máxima do menu */
+    overflow-y: auto; /* Permite rolagem se necessário */
+  }
+
+  .menuHeader {
+    padding: 12px 16px; /* Reduzido o padding para mobile */
+  }
+
+  .menuAvatar {
+    width: 36px; /* Reduzido para mobile */
+    height: 36px;
+    font-size: 16px;
+  }
+
+  .menuEmail {
+    font-size: 13px; /* Reduzido para mobile */
+  }
+
+  .menuItem {
+    padding: 10px 16px; /* Reduzido para mobile */
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Ajuste adicional para telas muito pequenas */
+@media screen and (max-width: 360px) {
+  .userMenu {
+    top: 10px;
+    right: 45px;
+  }
+
+  .userButton {
+    width: 30px;
+    height: 30px;
+  }
+
+  .userAvatar {
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+  }
+} 

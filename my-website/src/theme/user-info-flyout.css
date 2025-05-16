@@ -1,0 +1,62 @@
+/* src/theme/user-info-flyout.css */
+.user-info-flyout {
+  position: fixed;
+  top: 5px; /* Ajustado para um pouco mais de espaço do topo */
+  right: 70px;
+  padding: 10px 15px;
+  background-color: var(--ifm-background-surface-color); /* Usar variável do Docusaurus para cor de fundo */
+  color: var(--ifm-color-content); /* Usar variável do Docusaurus para cor do texto */
+  border: 1px solid var(--ifm-color-emphasis-300); /* Usar variável para borda */
+  border-radius: 6px; /* Adicionar bordas arredondadas */
+  z-index: 1000;
+  box-shadow: var(--ifm-global-shadow-lw); /* Adicionar uma sombra leve */
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaço entre o email e o botão */
+}
+
+.user-info-email {
+  font-size: 0.9rem;
+}
+
+.user-info-logout-button {
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-contrast-foreground);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.user-info-logout-button:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+/* Estilos para Mobile */
+@media (max-width: 768px) {
+  .user-info-flyout {
+    top: auto; /* Remover 'top' para que 'bottom' funcione */
+    bottom: 15px; /* Posicionar na parte inferior */
+    left: 15px;   /* Posicionar à esquerda */
+    right: 15px;  /* Posicionar à direita para ocupar a largura */
+    width: calc(100% - 30px); /* Ocupar largura com pequeno espaçamento lateral */
+    box-sizing: border-box; /* Para que padding não aumente a largura total */
+    justify-content: space-between; /* Espaçar o email e o botão */
+    padding: 12px;
+    font-size: 0.85rem; /* Reduzir um pouco a fonte geral do flyout */
+  }
+
+  .user-info-email {
+    font-size: 0.8rem; /* Reduzir fonte do email */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adicionar '...' se o email for muito longo */
+    max-width: calc(100% - 100px); /* Limitar largura do email para caber o botão (ajuste 100px conforme o tamanho do botão) */
+  }
+
+  .user-info-logout-button {
+    padding: 8px 10px;
+    font-size: 0.8rem; /* Reduzir fonte do botão */
+  }
+} 

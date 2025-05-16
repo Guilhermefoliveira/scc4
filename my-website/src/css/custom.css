@@ -1,47 +1,58 @@
-
 :root {
-  --ifm-color-primary: #d6535c/* #2e8555 */;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #d6535c; /* Vermelho/rosa para tema claro */
+  --ifm-color-primary-dark: #b8434c; /* Tom mais escuro de #d6535c para hover no tema claro */
+  --ifm-color-primary-darker: #a03942; /* Ainda mais escuro, se necessário */
+  --ifm-color-primary-darkest: #7c2c33; /* Mais escuro ainda */
+  --ifm-color-primary-light: #e07880; /* Tom mais claro de #d6535c */
+  --ifm-color-primary-lighter: #e68f96; /* Ainda mais claro */
+  --ifm-color-primary-lightest: #f0b8bc; /* Mais claro ainda */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 
 [data-theme='dark'] {
-  --ifm-color-primary:#26accb/*  #25c2a0 */;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --ifm--ifm-color-darkest: #54c7ec;
+  --ifm-color-primary: #26accb; /* Azul/ciano para tema escuro */
+  --ifm-color-primary-dark: #1e88a8; /* Tom mais escuro de #26accb para hover no tema escuro */
+  --ifm-color-primary-darker: #1a7590; /* Ainda mais escuro */
+  --ifm-color-primary-darkest: #135669; /* Mais escuro ainda */
+  --ifm-color-primary-light: #4fbddb; /* Tom mais claro de #26accb */
+  --ifm-color-primary-lighter: #68c7e2; /* Ainda mais claro */
+  --ifm-color-primary-lightest: #93d7eb; /* Mais claro ainda */
+  --ifm--ifm-color-darkest: #54c7ec; /* Esta variável parece ter um --ifm a mais, pode ser um typo antigo. Mantendo por ora. */
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 .button {
-  background-color: #007bff; 
-  color: #ffffff; 
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
+  /* Usar variáveis do Docusaurus para cores */
+  background-color: var(--ifm-button-background-color, var(--ifm-color-primary)); /* Fallback para --ifm-color-primary */
+  color: var(--ifm-button-color, var(--ifm-color-primary-contrast-foreground)); /* Fallback para contraste primário */
+  border: 1px solid var(--ifm-button-border-color, transparent); /* Adicionar uma borda sutil ou transparente */
+  
+  padding: 0.375rem 1.5rem; /* Exemplo de padding do Docusaurus, ajuste se necessário */
+  border-radius: var(--ifm-button-border-radius, 0.4rem);
+  font-size: 1rem; /* Ajustar se necessário */
+  font-weight: var(--ifm-button-font-weight, 700);
+  line-height: 1.5;
+  transition: all 0.2s ease-in-out; /* Ajustar transição */
   cursor: pointer;
+  text-decoration: none; /* Garantir que não haja sublinhado de link */
 }
 
 .button:hover {
-  background-color: #0056b3; 
-  transform: scale(1.1); 
+  background-color: var(--ifm-button-background-color-hover, var(--ifm-color-primary-dark));
+  color: var(--ifm-button-color-hover, var(--ifm-color-primary-contrast-foreground));
+  border-color: var(--ifm-button-border-color-hover, transparent);
+  /* transform: scale(1.1); */ /* Você pode manter ou remover o scale */
+  text-decoration: none;
 }
 
+[data-theme='dark'] .navbar__item.button {
+  color: var(--ifm-color-white); /* Texto branco para o botão "Docs" no tema escuro (estado normal) */
+}
 
+/* A regra .button-primary original foi removida/comentada abaixo */
+/*
 .button-primary {
   background-color: #26accb; 
 }
@@ -51,15 +62,159 @@
   color: #ffffff;
   transform: scale(1.1);
 }
+*/
 
+/* 
 .footer__logo {
   display: flex;
   justify-content: center;
   margin-top: 20px; 
-}
+} */
 
 .footer__logo img {
   max-width: 150px; 
   height: auto;
+}
+
+/* Estilos para o Footer */
+.footer.footer--dark {
+  padding-top: 0; /* Reduz o padding superior padrão */
+  padding-bottom: 0; /* Reduz o padding inferior padrão */
+  min-height: 0; /* Override Docusaurus default min-height */
+}
+
+/* Container dentro do footer */
+.footer .container,
+.footer .container-fluid {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Ajustar o espaçamento da logo se necessário */
+.footer__logo {
+  margin-top: 0.5rem; /* Reduz a margem acima da logo */
+  margin-bottom: 0.25rem; /* Adiciona uma margem abaixo da logo */
+  /* display: flex; e justify-content: center; já estão definidos */
+}
+
+.footer__logo img {
+  max-width: 100px; /* Reduz ainda mais o tamanho máximo da logo no footer */
+  /* height: auto; já está definido */
+}
+
+/* Títulos das colunas de links */
+.footer__title {
+  font-size: 0.9rem; /* Diminui o tamanho da fonte do título */
+  margin-bottom: 0.25rem; /* Reduz a margem abaixo do título */
+}
+
+/* Container for all link columns */
+.footer__links {
+  display: flex; /* Make link columns flow in a row */
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0; /* Remove default padding if it's a ul */
+  list-style: none; /* Remove list bullets if it's a ul */
+  order: 1; /* Links first */
+  flex-grow: 1; /* Allow links section to take available space */
+  justify-content: flex-start; /* Align links to the start of this container */
+  margin-right: 1rem; /* Add space between links and copyright */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Individual link columns (Docusaurus uses .col.footer__col) */
+.footer__link-item {
+  font-size: 0.8rem; /* Diminui o tamanho da fonte dos links */
+  line-height: 1.2; /* Ajusta o espaçamento entre linhas se houver quebra */
+  margin-bottom: 0; /* Reduz o espaçamento entre os links */
+}
+
+.footer__link-item:last-child {
+  margin-right: 0;
+}
+
+/* Copyright text adjustments */
+.footer__copyright {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 0.7rem;
+  text-align: right; /* Align to the right */
+  order: 2; /* Copyright second */
+  margin-left: 0; /* Ensure no conflicting left margin */
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Media query for smaller screens to stack them if needed */
+@media (max-width: 768px) {
+  .footer .container,
+  .footer .container-fluid {
+    display: block; 
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .footer__links { 
+    display: block; 
+    text-align: center;
+    margin: 0 auto 0.25rem auto; 
+    padding: 0;
+    flex-grow: initial;
+    justify-content: initial;
+    order: initial; 
+    margin-right: auto; 
+    margin-left: auto;
+    flex-shrink: initial;
+  }
+
+  /* Hide specific titles */
+  .footer__links .footer__col:nth-child(1) .footer__title, /* Home title */
+  .footer__links .footer__col:nth-child(2) .footer__title, /* Links title */
+  .footer__links .footer__col:nth-child(3) .footer__title  /* Midias Sociais title */
+  {
+    display: none !important;
+  }
+
+  /* Hide all items in the second column (Links column) */
+  .footer__links .footer__col:nth-child(2) .footer__link-item {
+    display: none !important;
+  }
+  
+  /* Ensure the columns that WILL have visible links don't add extra space or block layout */
+  .footer__links .footer__col:nth-child(1),
+  .footer__links .footer__col:nth-child(3) {
+    display: inline; /* Let link items inside flow naturally with .footer__link-item styles */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hide the actual column div if all its children (title and items) are hidden - for column 2 */
+  .footer__links .footer__col:nth-child(2) {
+      display: none !important; /* Hide the second column container itself */
+  }
+
+  /* Styling for the VISIBLE link items (SCC4 from col 1, Instagram from col 3) */
+  .footer__link-item {
+    display: inline-block !important; /* Make them flow horizontally */
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    margin: 0 0.3rem 0.1rem 0.3rem; /* Horizontal and minimal bottom margin */
+    padding: 0.05rem 0.1rem; /* Minimal padding */
+    vertical-align: middle; /* Align them nicely if font sizes differ slightly */
+  }
+
+  .footer__copyright {
+    display: block; 
+    text-align: center;
+    margin: 0 auto; 
+    padding: 0.1rem 0;
+    font-size: 0.65rem; 
+    order: initial;
+    flex-shrink: initial;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
