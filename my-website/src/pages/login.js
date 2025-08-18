@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from '@docusaurus/router';
-// Link não é mais necessário se não houver link para signup
-// import Link from '@docusaurus/Link'; 
 import { useAuth } from '@site/src/contexts/AuthContext';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './login.module.css';
-// import { isAlive, detach } from "mobx-state-tree"; // Parece não utilizado, remover se for o caso
 
 /**
  * Componente de página de login que gerencia a autenticação com Google

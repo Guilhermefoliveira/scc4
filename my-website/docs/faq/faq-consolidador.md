@@ -1,177 +1,120 @@
----
-sidebar_position: 1
----
+# FAQ: Consolidador Portal Postal
 
-# Consolidador
+Este guia de perguntas e respostas foi criado para solucionar as principais dúvidas sobre a instalação, operação e funcionalidades do **Consolidador**, o software de produção local do ecossistema Portal Postal.
 
 ---
 
-## 1. Introdução e Configuração Inicial
+## 1. Introdução e Visão Geral
 
 ### O que é o Consolidador e para quem ele é indicado?
 
-O Consolidador é uma aplicação local usada pelas Agências Franqueadas dos Correios (AGFs) para gerenciar e controlar as operações ligadas ao Portal Postal. Ele é indicado para AGFs que precisam centralizar processos de importação, exportação, expedição, geração de relatórios, controle de faturas e cadastros, garantindo mais eficiência e segurança nas atividades diárias.
+O Consolidador é a aplicação desktop (local) usada pelas Agências Franqueadas dos Correios (AGFs) para executar e controlar as operações diárias de postagem. Ele é a ferramenta da "linha de frente", indicada para AGFs que precisam de uma solução robusta para processar encomendas (aferição), expedir malotes, gerenciar o faturamento e sincronizar esses dados operacionais com a plataforma de gestão.
 
-### Quais são as principais vantagens de utilizar o Consolidador?
+> **💡 Conhecimento Operacional (Para a Agência):** Por ser uma aplicação local, o Consolidador oferece alta performance para as operações do dia a dia, como a bipagem de centenas de objetos, sem depender da velocidade da internet para cada transação.
 
-- **Centralização Operacional**: Une todas as operações em um único lugar.  
-- **Automação de Processos**: Reduz erros e retrabalho, acelerando etapas como expedição e processamento de objetos.  
-- **Integração Completa**: Sincroniza automaticamente informações com o Portal Postal Web e outros sistemas.  
-- **Relatórios e Análises**: Gera relatórios para controle financeiro e operacional, auxiliando na tomada de decisões.  
-- **Suporte e Manutenção**: Ferramentas de suporte internas e sincronização manual ou automática para estabilidade do sistema.
+### Qual a diferença entre o Consolidador e a Web da Agência?
+
+Pense neles como "fábrica" e "escritório de monitoramento":
+
+* **Consolidador (Fábrica e Financeiro):** É o software local onde todo o trabalho físico e financeiro acontece: pesar, medir, bipar, processar encomendas, fechar malotes e, crucialmente, **gerar as faturas** dos clientes.
+* **Web da Agência (Escritório de Monitoramento):** É a plataforma online onde a gestão de clientes e a análise de dados acontecem. Ela recebe os dados do Consolidador e permite **monitorar o status das faturas**, visualizar relatórios consolidados e gerenciar as configurações dos clientes.
+
+> **🗣️ Para Orientar seu Cliente:** Quando seu cliente perguntar onde ele pode ver o "total a pagar do mês", explique que a fatura oficial e detalhada é gerada por você, na agência (pelo Consolidador). Ele poderá consultar um resumo dessa fatura e o status do pagamento na Web do Cliente dele, após a sincronização dos dados.
 
 ### Quais são os requisitos técnicos para instalar o Consolidador?
 
-- **Sistema Operacional**: Windows 10 ou superior.  
-- **Hardware**: Processador Intel i5 (ou equivalente) e pelo menos 8 GB de memória RAM, garantindo boa performance sem sobrecarregar o CPU.  
-- **Conexão com a Internet**: Necessária para a sincronização com o Portal Postal Web; recomenda-se uma internet banda larga estável.  
-- **Banco de Dados Local**: Fornecido junto com o Consolidador, deve ser instalado e configurado adequadamente.  
-- **Dispositivos Periféricos**: Se necessários, como balanças (normais ou cubadoras) e impressoras térmicas, devidamente configurados no sistema.
+* **Sistema Operacional:** Windows 10 ou superior.
+* **Hardware Recomendado:** Processador Intel i5 (ou equivalente), 16 GB de memória RAM.
+* **Conexão com a Internet:** Essencial para a sincronização com a Web da Agência.
+* **Banco de Dados Local:** Por conter a base de dados histórica da agência, garante a performance e a disponibilidade dos dados para relatórios e faturamento.
+
+> **💡 Conhecimento Operacional (Para a Agência):** A recomendação de 16 GB de RAM é importante para agências com grande volume de dados, pois o banco de dados local cresce com o tempo. Garanta também uma rotina de backup (ver seção de Utilitários) para proteger essa base histórica.
 
 ### Como faço a configuração inicial após a instalação?
 
-1. **Abra o Consolidador** e acesse o menu de configurações.  
-2. **Cadastre parâmetros essenciais**, como máquinas de franquia, sequências lógicas, impressoras e balanças.  
-3. **Sincronize** pela primeira vez com o Portal Postal Web para importar dados iniciais ou validar credenciais de acesso.  
-4. **Personalize** as configurações gerais conforme as necessidades da sua AGF (ex.: identificação de PLPs, e-mail, permissões de usuários).  
+1. **Abra o Consolidador** e acesse o menu de **Configurações**.
+2. **Cadastre os parâmetros essenciais** da sua agência, como máquinas de franquia, sequências lógicas e os dispositivos (impressora, balança).
+3. **Realize a primeira sincronização** com a Web da Agência para validar as credenciais e carregar as informações iniciais de clientes.
 
-### É preciso ter acesso constante à internet?
+### O acesso à internet precisa ser constante?
 
-Sim, pois o Consolidador sincroniza periodicamente as informações com o Portal Postal Web. No entanto, se houver quedas temporárias de conexão, o sistema segue operando localmente e retoma a sincronização quando a internet for restabelecida.
+Para a sincronização, sim. No entanto, o Consolidador foi projetado para continuar operando localmente mesmo durante quedas temporárias de internet, inclusive para faturamento. Assim que a conexão é restabelecida, ele retoma a sincronização dos dados pendentes.
 
----
-
-## 2. Operações Diárias: Importações, Exportações e Expedição
-
-### Como são realizadas as importações de arquivos no Consolidador?
-
-- **Configuração de layouts de importação**: Defina como o sistema deve ler arquivos de postagem, tickets do SARA e listas de postagem.  
-- **Importação efetiva**: Acesse o menu Importações, selecione o tipo de arquivo e localize o arquivo a ser importado.  
-- **Consulta de importações**: É possível verificar o histórico de arquivos já importados para acompanhamento e auditoria.  
-
-### Quais tipos de arquivos podem ser importados?
-
-O Consolidador suporta diversos formatos, como **arquivos de postagem (geralmente CSV, TXT ou XML)** e **tickets do sistema SARA**. A configuração de layout permite mapear campos personalizados, adaptando-se aos padrões da AGF.
-
-### Como funciona a exportação de dados?
-
-O Consolidador exporta vendas, lotes de movimentação e outros dados para integrar com o SARA, Portal Postal Web ou sistemas de gestão dos Correios. Basta acessar o menu de **Exportações**, escolher o tipo de dado e confirmar o envio. É possível verificar se houve sucesso ou falha na tela de monitoramento de exportações.
-
-### O que é o processo de Expedição e como ele funciona?
-
-A expedição consiste em agrupar e despachar objetos postais em malas de envio. O Consolidador permite:  
-
-- **Abertura simultânea de até 12 malas**.  
-- **Separação automática** de volumes.  
-- **Impressão de etiquetas** para cada mala.  
-- **Controle de objetos não expedidos** (aqueles que não foram inseridos em nenhuma mala ou tiveram algum erro).
-
-### Posso rastrear meus objetos pelo Consolidador?
-
-Sim. O sistema registra eventos operacionais (como expedição, conferência e devoluções) e permite **consultar o status** de cada objeto, ajudando na identificação de possíveis atrasos ou problemas de entrega.
+> **💡 Conhecimento Operacional (Para a Agência):** Crie o hábito de forçar uma sincronização manual ao final do expediente para garantir que os dados na Web da Agência e na Web do Cliente estejam 100% atualizados com o fechamento do dia.
 
 ---
 
-## 3. Funcionalidades e Ferramentas Principais
+## 2. Operações Diárias
 
-### Quais cadastros podem ser realizados no Consolidador?
+### Como funciona o processo de aferição de uma PPN no Consolidador?
 
-- **Sequências lógicas** (definição da numeração de postagens ou processos).  
-- **Sub-caixas do SARA** (caso exista divisão de fluxos).  
-- **Máquinas de franquia**.  
-- **Dispositivos** (balanças, impressoras, e-mail).  
-- **Identificação de PLPs** (para relacionar o objeto com o número correspondente).
+A aferição é o processo de validar uma encomenda que chega no balcão:
 
-### Como funciona a venda local?
+1. O operador bipa a etiqueta PPN do pacote.
+2. O sistema busca os dados da pré-postagem que o cliente gerou.
+3. O operador confirma o peso e as dimensões. Com uma **balança comum**, ele digita os dados. Com uma **balança de cubagem** (ex: BoxCubo), os dados são capturados automaticamente.
+4. Após a validação, o objeto está processado e pronto para a expedição.
 
-A venda local é uma **ferramenta operacional** para processar objetos vendidos diretamente na AGF, gerando etiquetas e registrando pagamento. Ela pode ser configurada para diversos níveis de detalhamento, como quantidade, peso e valor declarado.
+> **🗣️ Para Orientar seu Cliente:** Explique a importância de ele preencher corretamente os dados de peso e dimensões ao gerar a etiqueta PPN. Informe que, na agência, esses dados são conferidos (aferidos) e que divergências podem gerar cobranças extras ou a necessidade de refazer a etiqueta.
 
-### Há controle de devoluções no sistema?
+### Como são realizadas as importações de arquivos?
 
-Sim. O Consolidador possui funcionalidades para **conferência de etiquetas e devoluções**, permitindo marcar objetos como devolvidos ao remetente ou aguardando retirada. É possível acompanhar todo o ciclo até a finalização.
+No menu **Importações**, você pode importar arquivos essenciais para a operação, como o **Balancete Diário de Faturamento (BDF)** e tickets do sistema SARA. O Consolidador permite configurar layouts para ler diferentes formatos de arquivo.
 
-### Como imprimir relatórios de produtividade e vendas?
+> **💡 Conhecimento Operacional (Para a Agência):** A importação do BDF é uma das tarefas mais importantes da rotina de abertura. Ela é a base para a conciliação financeira e garante que o que você cobrou do cliente bate com o que os Correios cobraram da sua agência.
 
-1. Acesse o menu **Relatórios**.  
-2. Selecione o tipo de relatório (ex.: objetos processados, movimentações financeiras, auditorias de caixas, Curva ABC).  
-3. Configure filtros (datas, clientes, status) e clique em **Gerar Relatório**.  
-4. Você pode exportar em formatos como PDF ou Excel, se desejar.
+### O que é o processo de Expedição?
+
+Expedição é o processo de agrupar os objetos já aferidos em malotes (malas) para o envio. No Consolidador, você pode:
+
+* Abrir múltiplas malas simultaneamente.
+* Bipar os objetos para dentro de cada mala correspondente.
+* Gerar o **Arquivo de Expedição PP (`.csv`)** ao final do processo.
+* Imprimir os romaneios da mala e controlar objetos que não foram expedidos.
+
+> **💡 Conhecimento Operacional (Para a Agência):** Sempre realize uma conferência física dos pacotes na área de expedição antes de fechar a mala no sistema. Um objeto esquecido para trás após a geração do arquivo `.csv` requer um processo de correção manual.
 
 ---
 
-## 4. Faturamento, BDF e Financeiro
+## 3. Faturamento e Financeiro
 
-### O Consolidador gera faturas automaticamente?
+### O Consolidador gera as faturas para os clientes?
 
-Sim. Na aba **Faturas**, você pode gerar, consultar e gerenciar faturas de forma automática ou manual, controlando pagamentos, limites de crédito e registros de cobrança.
+**Sim.** O Consolidador é a ferramenta principal e correta para todo o ciclo de faturamento. Por conter a base de dados local e completa desde a implantação, ele possui os dados analíticos necessários para:
 
-### Como fazer a importação e pré-alerta de dados do BDF (Boletim Diário Financeiro)?
+* **Gerar faturas** detalhadas para clientes de contrato.
+* **Gerenciar e consultar** o histórico de faturas.
+* **Controlar pagamentos** e limites de crédito.
 
-1. Acesse o menu **BDF** dentro do sistema.  
-2. Selecione **Importar Arquivo** e defina o layout se necessário.  
-3. Após a importação, confira o **pré-alerta** das movimentações financeiras.  
-4. Utilize relatórios específicos (DDO, Proter) para análise e registro no sistema financeiro.
+> **🗣️ Para Orientar seu Cliente:** Informe ao seu cliente de contrato que a fatura oficial, com o detalhamento de todas as postagens do período, será gerada e enviada por você (AGF). Ele não deve considerar os valores da Web do Cliente como um documento de cobrança final, mas sim como uma prévia.
+
+### Como funciona a importação do BDF?
+
+1. Acesse o menu **BDF** no sistema.
+2. Clique em **Importar Arquivo** e selecione o arquivo do **Balancete Diário de Faturamento** fornecido pelo SARA.
+3. Após a importação, o sistema cruza os dados e gera relatórios de conciliação financeira, como DDO e Proter.
 
 ### É possível acompanhar o status das faturas em aberto?
 
-Sim. O sistema disponibiliza um **painel de faturas** que mostra valores em aberto, pagos e vencidos, facilitando o controle financeiro da AGF. Você também pode gerar relatórios consolidados para análise.
+Sim. O módulo de **Faturas** do Consolidador mostra um painel completo com valores em aberto, pagos e vencidos, facilitando todo o controle financeiro e a cobrança ativa dos clientes.
 
 ---
 
-## 5. Relatórios e Monitoramento
+## 4. Relatórios e Utilitários
 
-### Quais indicadores de performance estão disponíveis?
+### Quais relatórios gerenciais posso extrair do Consolidador?
 
-- **Curva ABC**: Mostra quais clientes ou produtos representam maior volume de faturamento ou postagens.  
-- **Auditorias de Caixas**: Auxiliam na conferência de valores recebidos e movimentações.  
-- **Relatórios de Objetos Processados**: Identificam quantos objetos foram registrados, expedidos ou devolvidos.  
-- **Movimentações Financeiras**: Permite acompanhar o fluxo de caixa e a rentabilidade do período.
+O Consolidador oferece relatórios completos e detalhados, como:
 
-### Como posso monitorar todo o fluxo operacional?
+* **Relatórios de Faturamento:** Análise de receita por cliente, período, etc.
+* **Objetos Processados:** Quantidade de itens aferidos.
+* **Auditorias de Caixa:** Conferência das movimentações do balcão.
+* **Curva ABC:** Análise de quais clientes ou serviços geram mais receita.
 
-Acesse o menu **Relatórios** ou **Pesquisas** e utilize as ferramentas de consulta para verificar objetos postados, lotes expedidos, listas de postagem, clientes e eventos do sistema. Assim, você tem um panorama completo do desempenho operacional.
+> **💡 Conhecimento Operacional (Para a Agência):** Use o relatório de Curva ABC mensalmente para identificar seus clientes mais importantes. Isso pode guiar ações comerciais, como oferecer um novo serviço ou renegociar uma tabela de preços.
 
----
+### Para que serve o menu "Utilitários"?
 
-## 6. Suporte, Manutenção e Utilitários
+É uma área com ferramentas de manutenção, onde você pode realizar **backup** do seu banco de dados, **atualizar as tabelas de tarifas**, forçar uma **sincronização manual** e verificar a **versão do sistema**.
 
-### Há algum recurso de backup no Consolidador?
-
-Sim. No menu **Utilitários**, há opções para **backup do banco de dados** e restauração, garantindo a segurança das informações armazenadas localmente. É recomendado realizar backups periódicos.
-
-### Como faço para atualizar tarifas ou o próprio sistema?
-
-- **Atualização de Tarifas**: Acesse **Utilitários** > **Atualizar Tarifas** e confirme para baixar a nova tabela de preços.  
-- **Atualização do Sistema**: Pode ser configurada para **sincronização automática** ou executada manualmente sempre que houver uma nova versão disponível.
-
-### Preciso configurar algo para a sincronização manual com o Portal Postal Web?
-
-Sim. No menu de configurações, você pode habilitar a **sincronização manual**. Assim, toda vez que desejar atualizar dados (importar ou exportar), basta acessar o menu e clicar em **Sincronizar Agora**.
-
-### Qual o procedimento se o sistema apresentar lentidão ou travar?
-
-1. **Verifique** a conexão de internet.  
-2. **Feche** e reabra o Consolidador.  
-3. **Reinicie** o computador, se necessário.  
-4. Se o problema persistir, **entre em contato com o suporte**, informando a versão do sistema e detalhes do ocorrido.
-
----
-
-## 7. Perguntas Gerais
-
-### É possível integrar o Consolidador com outros sistemas além do Portal Postal Web?
-
-O foco principal é a integração com o Portal Postal Web e sistemas dos Correios (SARA). Porém, dependendo das necessidades da AGF, podem existir **soluções personalizadas** ou adicionais via arquivo de importação/exportação.
-
-### Preciso de treinamento para operar o Consolidador?
-
-O sistema é **intuitivo**, mas recomenda-se um breve treinamento para conhecer recursos avançados, configurações e boas práticas de uso, garantindo maior eficiência na operação.
-
-### Onde encontro mais informações ou suporte especializado?
-
-Você pode entrar em contato com o **suporte técnico** disponibilizado pela equipe do Portal Postal/Consolidador. Há também manuais e tutoriais que podem ser acessados dentro do próprio sistema ou no site oficial, além de canais de atendimento via e-mail e telefone.
-
----
-
-**Ainda tem dúvidas?**  
-Entre em contato com o suporte do Portal Postal para obter ajuda especializada ou consulte os tutoriais disponíveis no sistema. Esse FAQ será atualizado periodicamente para refletir melhorias e novas funcionalidades.
+> **💡 Conhecimento Operacional (Para a Agência):** Estabeleça uma rotina **diária** de backup do banco de dados. Salve o arquivo em um local seguro (HD externo ou nuvem). Essa é a sua apólice de seguro para toda a operação histórica da agência.

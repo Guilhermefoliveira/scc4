@@ -179,7 +179,7 @@
 @media screen and (max-width: 768px) {
   .userMenu {
     top: 12px; /* Ajustado para ficar alinhado com o botão de tema */
-    right: 50px;
+    right: 20px;
   }
 
   .userButton {

@@ -109,18 +109,25 @@
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* Remove sublinhado do link do card */
+  border: 2px solid transparent; /* Borda base transparente */
+  color: var(--ifm-color-content); /* Cor base para texto não estilizado dentro do card */
 }
 
 .quickAccessCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none; /* Garante que não haja sublinhado no hover */
+  border-color: var(--ifm-color-primary); /* Cor da borda no hover */
+  color: var(--ifm-color-content); /* Mantém a cor base do texto */
 }
 
 .cardIcon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--ifm-color-primary); /* Cor específica para o ícone, se necessário */
 }
 
 .cardTitle {
@@ -165,8 +172,9 @@
   padding: 1.5rem;
   text-decoration: none;
   color: var(--ifm-color-content);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent; /* Borda base transparente */
 }
 
 .recentDocCard:hover {
@@ -174,6 +182,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-decoration: none;
   color: var(--ifm-color-content);
+  border-color: var(--ifm-color-primary); /* Cor da borda no hover */
 }
 
 .recentDocCard h3 {
@@ -199,13 +208,19 @@
   border-radius: 8px;
   padding: 1.5rem;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none; /* Remove sublinhado do link do card */
+  border: 2px solid transparent; /* Borda base transparente */
+  color: var(--ifm-color-content); /* Cor base para texto dentro do card */
 }
 
 .supportCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-decoration: none; /* Garante que não haja sublinhado no hover */
+  border-color: var(--ifm-color-primary); /* Cor da borda no hover */
+  color: var(--ifm-color-content); /* Mantém a cor base do texto */
 }
 
 .supportCard h3 {

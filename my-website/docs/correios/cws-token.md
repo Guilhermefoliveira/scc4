@@ -2,131 +2,95 @@
 sidebar_position: 2
 ---
 
-# Geração do Token nos Correios CWS / Cadastro do Portal Postal
+# Guia de Configuração: Correios Web Service (CWS) e Portal Postal
 
-## **1. Introdução**
+Este documento detalha o processo de cadastro e configuração do token do Correios Web Service (CWS) no Portal Postal para habilitar a Pré-Postagem de Objetos (PPN).
 
-Esta documentação descreve o processo de login, geração de token e autenticação no CWS - Correios, além das orientações para cadastramento de API e cartão de postagem. Este guia destina-se a AGFs e clientes que precisam acessar os serviços dos Correios via API.
+## Parte 1: CWS - Correios Web Service
 
----
+O primeiro passo é obter o token de acesso na plataforma dos Correios.
 
-## **2. Acesso ao CWS (Central Authentication Service - CAS)**
+**Pré-requisitos:**
 
-### **2.1 Login no CWS**
+* Login e senha do seu **ID Correios**.
 
-1. Acesse o portal do **CWS - Correios**.  
-   [![Login no Correios CWS](../../static/img/correios/login-cws.png "Faça login no correios CWS")](https://cas.correios.com.br/login?service=https%3A%2F%2Fcws.correios.com.br%2Flogin%2Fcas)  
-   [Login - CAS - Central Authentication Service](https://cas.correios.com.br/login?service=https%3A%2F%2Fcws.correios.com.br%2Flogin%2Fcas)
+### Obtendo o Token de Acesso
 
-2. Utilize o **IDCorreios** para autenticação.  
-   - Se o cliente não possuir o IDCorreios, ele deve verificar com a **ECT** como obter credenciais de acesso.
+1. Acesse o site do **Correios Web Service** pelo link indicado e faça login.
+   Link do site dos [Correios Web Service](https://cws.correios.com.br/).
+    > [![Tela de login do Correios Web Service](../../static/img/cws_imagens/login.png)](https://docs-scc4.web.app/assets/images/login-5025f691070e4554b15a5a7579966742.png)
 
-### **2.2 Menu de Ajuda**
+2. Após o login, navegue no menu até a opção **"Gestão de Acesso à API"**.
+    > [![Menu principal do CWS destacando 'Gestão de Acesso à API'](../../static/img/cws_imagens/menu-gestao.png)](https://docs-scc4.web.app/assets/images/menu-gestao-100036a3554b18f9472ff64c2632757a.png)
 
-- O próprio CWS possui um **Menu de Ajuda**, onde há um passo a passo explicando como gerar e autenticar o token.  
-- O Portal Postal também disponibilizará esse guia.  
-- Se houver dúvidas mesmo após a consulta do Menu de Ajuda, o cliente ou AGF deve entrar em contato com o **suporte do Portal Postal**.
+3. Na tela de "Gestão de Acesso", copie o **login** informado. Você precisará dele mais tarde para configurar o Portal Postal.
+    > [![Tela de 'Gestão de Acesso à API' com o campo de login destacado](../../static/img/cws_imagens/gestao-usuario.png)](https://docs-scc4.web.app/assets/images/gestao-usuario-e2dd948c0b90270b2bb6926774afa1c7.png)
 
-[![Menu Ajuda Correios](../../static/img/correios/menu-ajuda.png "No caso de duvidas, pode acessar o menu ajuda no site dos correios")](https://scc4.atlassian.net/48d12b24-49dd-4619-9a8e-6a0c00e81d21id=ecbfe311-6c55-41f6-b322-ec363473a642&collection=contentId-4325434&contextId=4325434&mimeType=image%2Fpng&name=image-20240207-180641.png&size=536652&width=1600&height=903&alt=image-20240207-180641.png)
+4. Insira novamente a sua senha do ID Correios no campo correspondente e clique em **"Regerar código"**.
+    > [![Campo de senha para regerar o código/token](../../static/img/cws_imagens/gestao-senha.png)](https://docs-scc4.web.app/assets/images/gestao-senha-0ec118bab8ab96d28b8f82d3c8e2c38e.png)
 
----
+5. Um novo token será gerado. Copie este código e salve-o em um local seguro.
+    > [![Token de acesso gerado na tela](../../static/img/cws_imagens/token-gerado.png)](https://docs-scc4.web.app/assets/images/token-gerado-c5dcbab4c079fb4ffc0428b300a8bde2.png)
 
-## **3. Gestão de Acesso às APIs**
+> **Observação Importante:**
+> Antes de gerar um novo token, verifique com a sua equipe se um token já não foi gerado anteriormente. Dependendo da empresa, o mesmo token pode ser utilizado em múltiplos sistemas. Caso não haja nenhum token em uso, pode seguir com o tutorial.
+> [![Menu 'Início' com a opção 'Credenciais' destacada](../../static/img/cws_imagens/ja-possui-token-cuidado.png)](https://docs-scc4.web.app/assets/images/ja-possui-token-cuidado-ed6acc9711ba68d43e523a27f2ae3399.png)
 
-### **3.1 Copiando o Login e Senha para API**
+### Validando as Credenciais
 
-[![Gestao de acesso api](../../static/img/correios/gestao-acesso-api.png "Insira suas credenciais id correios")](https://scc4.atlassian.net/48d12b24-49dd-4619-9a8e-6a0c00e81d21id=ecbfe311-6c55-41f6-b322-ec363473a642&collection=contentId-4325434&contextId=4325434&mimeType=image%2Fpng&name=image-20240207-180641.png&size=536652&width=1600&height=903&alt=image-20240207-180641.png)
+1. Ainda no ambiente do Correios Web Service, retorne ao menu **"Início"** e clique em **"Credenciais"**.
+    > [![Menu 'Início' com a opção 'Credenciais' destacada](../../static/img/cws_imagens/credenciais-inicio.png)](https://docs-scc4.web.app/assets/images/credenciais-inicio-ee1b7463511e80ae40f5c307762d7e9e.png)
 
-1. No campo **"Usuário do Portal Meu Correios"**, copie o login exibido (este é o **login da API**).  
-   - Salve esse login em um bloco de notas, para utilizá-lo posteriormente na tela de contrato ECT do Portal Postal.
+2. Na tela de credenciais, preencha os seguintes campos:
+    * **Código de acesso API:** Cole o token que você copiou e salvou no passo anterior.
+    * **Contrato:** Este campo pode ser deixado em branco.
+    * **Cartão de postagem:** Digite o número do cartão exatamente como está cadastrado no Portal Postal, **incluindo os dois zeros ("00") no início**.
+    > [![Tela de 'Credenciais' com os campos preenchidos](../../static/img/cws_imagens/informe-credenciais.png)](https://docs-scc4.web.app/assets/images/informe-credenciais-88285ce82a05934d055b7db3fb6de7d1.png)
 
-2. No campo **"Senha do Portal Meu Correios"**, insira a mesma senha usada para acessar o CWS.
+3. Clique em **"Gerar Token"**. Este segundo token serve apenas para validar as informações.
 
-3. **Insira a senha** (a mesma utilizada no CWS) e clique em **"Regerar Código"**.
+4. Assim que o cartão de postagem for validado com sucesso, você pode fechar a janela. Não é necessário salvar este segundo token.
 
----
-
-### **3.2 Gerando o Token**
-
-1. Se um token já existir, o sistema exibirá uma mensagem de confirmação. Clique em **"Sim"** para gerar um **novo token**.  
-
-2. O CWS exibirá o **novo token**. Copie e salve este token em um local seguro, pois ele será utilizado para:  
-   - **Autenticação** no CWS.  
-   - **Cadastro** na tela de contrato ECT na Web da Agência.  
-   - **Configuração** no Portal Postal (inserido como **senha** da API).
+Com o login e o primeiro token em mãos, o próximo passo é configurar o Portal Postal.
 
 ---
 
-### **3.3 APIs Habilitadas**
+## Parte 2: Portal Postal - Web da Agência
 
-1. **Permaneça** na tela de **Credenciais** e insira o **token** recém-gerado (ou utilize um token válido já existente), juntamente com o **cartão de postagem**, **utilizando um duplo 00 na frente** da numeração.  
-2. **Feche** a janela após a configuração. Em seguida, ao passar o mouse sobre o botão **Credenciais**, o CWS exibirá os serviços que o cliente tem liberados:  
-   - Caso haja APIs **liberadas**, elas aparecerão listadas.  
-   - Se **não** houver APIs habilitadas, o cliente terá acesso apenas a:  
-     - **Consulta de Preços e Prazos**  
-     - **Consulta de Imagem do Comprovante Eletrônico**
+Agora, vamos inserir as informações do CWS no cadastro do cliente dentro do Portal Postal.
 
----
+### Configurando o Cliente
 
-## **4. Erros Comuns e Soluções**
+1. No menu lateral do Portal Postal, acesse **"Cadastros"** e clique em **"Clientes"**.
+    > [![Menu lateral do Portal Postal com 'Cadastros' e 'Clientes' destacados](../../static/img/cws_imagens/cadastro-clientes.png)](https://docs-scc4.web.app/assets/images/cadastro-clientes-2266a14729f5f2c1a9f779455b18ddff.png)
 
-### **Erro "Acesso negado. Verifique o usuário e senha informados. STATUS 401"**
+2. Localize e selecione o cliente que deseja configurar. Abra a seção **"Contrato ECT"**.
+    > [![Tela de cadastro do cliente com a aba ou seção 'Contrato ECT' em destaque](../../static/img/cws_imagens/contrato-ect.png)](https://docs-scc4.web.app/assets/images/contrato-ect-88b8df9f43c69b4cc7610b18cc93b651.png)
 
-- Esse erro não está relacionado ao **Portal Postal**.  
-- Solução recomendada:  
-  1. Pressione **CTRL + F5** e refaça o processo na mesma tela.  
-  2. Se o erro persistir, aguarde alguns minutos e tente novamente.  
-  3. Caso o problema continue, entre em contato com a **ECT**.
+3. Verifique se os dados do contrato estão atualizados conforme a nova política dos Correios e se os campos obrigatórios (como cartão de postagem e logística reversa) estão preenchidos.
 
----
+4. Localize a seção de integração com o Correios Web Service e preencha os campos:
+    * **Login:** Insira o login que você copiou do site CWS.
+    * **Senha de acesso à API:** Cole o primeiro token que você gerou e salvou.
+    > [![Campos de integração 'Login' e 'Senha de acesso à API' preenchidos](../../static/img/cws_imagens/login-senha-api.png)](https://docs-scc4.web.app/assets/images/login-senha-api-86ddfdac2fe93f1dad8521366e030901.png)
 
-## **5. Cadastro do Cartão de Postagem e Autenticação na API**
+5. Marque a opção **"PPN"** como ativada e clique em **"Salvar"** para registrar as alterações.
+    > [![Checkbox 'PPN' ativado e botão 'Salvar' em destaque](../../static/img/cws_imagens/ppn-salvar.png)](https://docs-scc4.web.app/assets/images/ppn-salvar-f02f79ec9a96194560ec73f05a84e56c.png)
 
-1. Acesse a tela de **Início** do CWS e clique em **Credenciais**.
+### Testando a Configuração
 
-2. No campo **Cartão de Postagem**, insira o cartão de postagem **utilizando um duplo 00 na frente**.  
-   - Caso o cliente não tenha um cartão diferente, utilize o mesmo cartão de postagem.  
+1. Para garantir que a integração foi bem-sucedida, clique no botão **"Testar funcionamento da API"**.
+    > [![Botão 'Testar funcionamento da API' em destaque no cadastro do cliente](../../static/img/cws_imagens/testar-api.png)](https://docs-scc4.web.app/assets/images/testar-api-8772cccd5382d29a2e72850aea62fc94.png)
 
-   - **Quando for inserir o cartão de postagem no Portal Postal, não cadastre com o duplo "00".**
+2. Se a configuração estiver correta, uma mensagem de sucesso será exibida.
+    > [![Pop-up ou mensagem de sucesso confirmando a conexão com a API](../../static/img/cws_imagens/sucesso.png)](https://docs-scc4.web.app/assets/images/sucesso-ed7b50dda0a712b6d7659a58764d89bf.png)
 
-3. **Cadastrar login da API e token no Portal Postal:**  
-   - No campo **Login da API**, insira o **login** copiado (usuário do Portal Meu Correios).  
-   - No campo **Senha**, insira o **token** gerado anteriormente.
+3. Logo abaixo, o portal exibirá a lista de APIs liberadas para este cliente. Verifique se a **API "Pré-postagem" (código 36)** está na lista, pois ela é essencial para a emissão das etiquetas.
+    > [![Lista de APIs liberadas, com destaque para a 'Pré-postagem - 36'](../../static/img/cws_imagens/principais-apis.png)](https://docs-scc4.web.app/assets/images/principais-apis-04e743816968ddec2fa788d994b70fb9.png)
 
-4. **Finalização:**  
-   - Se o AGF estiver fazendo o cadastro para o cliente, o acesso estará liberado após este processo.  
-   - **Atenção**: Se o cliente usa este login e token em outro sistema, o AGF deve orientá-lo a atualizar os dados no outro sistema, pois a alteração do token pode causar falhas de autenticação.
+4. Por fim, realize um teste prático: gere uma nova etiqueta de postagem diretamente pela web do cliente.
 
----
-
-## **6. Processo pelo Cliente (Acesso Web)**
-
-Caso o cliente deseje realizar o processo diretamente pelo próprio acesso, ele deve:
-
-1. Acessar o portal Web do Cliente.  
-2. Ir até **Cadastro > Dados da Empresa > Login da API IDCORREIOS**.  
-3. Cadastrar:  
-   - **Login da API**  
-   - **Senha/Token**  
-   - **Cartão de postagem** (seguindo a mesma regra de **não** usar o duplo "00")
-
-**⚠ Importante:**  
-Se o cliente usa esse login e token em outro sistema, ele deve atualizá-los no outro sistema, pois qualquer alteração de token pode invalidar a autenticação nos serviços integrados.
-
----
-
-## **7. Suporte**
-
-Se houver qualquer dúvida ou erro que não seja resolvido pelas etapas descritas, o cliente ou AGF deve entrar em contato com:
-
-- **Menu de Ajuda do CWS**  
-- **Suporte do Portal Postal**  
-- **Correios (ECT)**, caso o problema esteja relacionado ao IDCorreios ou credenciais de acesso
-
----
-
-### **8. Considerações Finais**
-
-Esta documentação visa facilitar o acesso e autenticação ao CWS dos Correios, bem como a geração de token e integração com APIs. Seguindo os passos corretamente, o processo deve ocorrer sem problemas.
+5. Se a etiqueta for emitida corretamente e contiver o **código de rastreamento (SRO)**, o processo foi finalizado com sucesso!
+    > [![Exemplo de uma etiqueta gerada com sucesso, mostrando o código SRO](../../static/img/cws_imagens/etiqueta-gerada.png)](https://docs-scc4.web.app/assets/images/etiqueta-gerada-107b59bfa59f777ea2a8c83718addcec.png)
 
 ---

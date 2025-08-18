@@ -218,3 +218,6 @@
   }
 }
 
+.margin-top--sm, .margin-vert--sm{
+  display: none;
+}

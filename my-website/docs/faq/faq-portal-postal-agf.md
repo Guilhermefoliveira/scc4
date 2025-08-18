@@ -1,230 +1,125 @@
----
-sidebar_position: 3
----
+# FAQ: Portal Postal - Web da Agência
 
-# FAQ Portal Postal Web Agência
-
-## Introdução e Configuração Inicial
-
-### O que é o Portal Postal Web Agência e para quem ele é indicado?
-
-O **Portal Postal Web Agência** é uma plataforma online voltada especialmente para **Agências Franqueadas dos Correios (AGFs)**, reunindo diversas funcionalidades para administração de clientes, vendas, finanças, emissão de etiquetas, integrações e muito mais.  
-Ele é indicado para AGFs que desejam **centralizar e otimizar** seus processos, garantindo agilidade e eficiência no atendimento aos clientes.
+Este guia responde às principais dúvidas sobre as funcionalidades e o uso da **Web da Agência**, a sua plataforma online para gestão estratégica e administrativa no ecossistema Portal Postal.
 
 ---
 
-### Qual é o objetivo principal do Portal Postal Web Agência?
+## 1. Conceitos Básicos
 
-O principal objetivo é **unificar** as informações e atividades de uma AGF em um único ambiente digital, tornando a gestão diária mais simples e organizada. Isso inclui o controle de postagens, emissão de etiquetas, acompanhamento financeiro, integração com sistemas de terceiros (ERPs, e-commerce, marketplaces) e suporte técnico.
+### O que é a Web da Agência e para quem ela é indicada?
 
----
+A **Web da Agência** é a plataforma online de gestão para as Agências Franqueadas dos Correios (AGFs). Ela é indicada para gestores e administradores que precisam de uma visão centralizada para gerenciar clientes, monitorar finanças, analisar dados e configurar os serviços oferecidos.
 
-### Quais navegadores são compatíveis com a plataforma?
+> **💡 Conhecimento Operacional (Para a Agência):** Pense na Web da Agência como a "matriz" das configurações. Qualquer novo cliente, contrato ou serviço deve, obrigatoriamente, ser cadastrado e configurado aqui primeiro para que funcione nas outras partes do sistema.
 
-O Portal Postal Web Agência é compatível com navegadores atualizados, tais como:
+### Qual a diferença entre a Web da Agência e o Consolidador?
 
-- Google Chrome  
-- Mozilla Firefox  
-- Microsoft Edge  
-- Safari  
+Pense neles como "escritório de monitoramento" e "fábrica":
 
-> **Recomendamos sempre utilizar a versão mais recente do seu navegador para melhor desempenho e segurança.**
+* **Web da Agência (Escritório):** É a plataforma online onde você administra o negócio: gerencia clientes e contratos, analisa relatórios e monitora o faturamento.
+* **Consolidador (Fábrica):** É o software local onde a operação acontece: processamento de pacotes (aferição), expedição de malotes e a **geração das faturas**.
 
----
+> **🗣️ Para Orientar seu Cliente:** Use esta analogia para explicar ao seu cliente por que ele não realiza certas ações na plataforma dele. Ex: "A sua plataforma web (Web do Cliente) é para você criar suas etiquetas e consultar o rastreamento. A nossa (Web da Agência) é onde administramos o seu contrato. Já o sistema do nosso caixa (Consolidador) é o que processa seus pacotes e gera sua fatura."
 
-### É necessário instalar algum software para usar o Portal Postal Web Agência?
+### Preciso instalar algum software para usar a Web da Agência?
 
-Não. O Portal Postal Web Agência é acessado diretamente pelo navegador, não sendo necessária a instalação de programas adicionais em seu computador. Uma conexão estável à internet e um navegador compatível são suficientes.
+Não. A plataforma é 100% online e acessada diretamente pelo seu navegador de internet (como Google Chrome, Firefox ou Microsoft Edge). Apenas uma conexão estável com a internet é necessária.
 
 ---
 
-### Como realizo o primeiro cadastro e configuração na plataforma?
+## 2. Gestão de Clientes e Configurações
 
-1. Acesse a plataforma com seu **login** e **senha** iniciais fornecidos pela AGF ou pela equipe de suporte.  
-2. Insira as **informações da agência** (razão social, endereço, dados de contato) nas configurações básicas.  
-3. Defina parâmetros como **políticas de cobrança, serviços postais disponíveis** e perfis de acesso (administrador, operacional, etc.).  
+### Como cadastro um novo cliente?
 
-Após essa etapa, você já estará apto a cadastrar clientes, configurar contratos e emitir suas primeiras etiquetas.
+O cadastro é feito na Web da Agência.
 
----
+1. Acesse o menu de **Cadastro de Clientes**.
+2. Preencha os dados da empresa ou pessoa física.
+3. Configure os detalhes do contrato: tabela de preços, serviços habilitados, e o **Token da API** dos Correios.
+4. Crie os usuários e senhas de acesso para que seu cliente possa usar a **Web do Cliente**.
 
-## Papel e Responsabilidades da AGF
+> **💡 Conhecimento Operacional (Para a Agência):** Ao cadastrar um novo cliente, crie o hábito de salvar o Token da API em um local seguro da agência (como um gerenciador de senhas). Isso evita ter que solicitar novamente ao cliente caso precise fazer alguma manutenção ou diagnóstico no futuro.
 
-### Quais são as responsabilidades da AGF no uso do Portal Postal Web Agência?
+### Qual o papel da AGF no suporte ao cliente?
 
-A AGF atua como **administradora** e **facilitadora** do sistema, com tarefas que incluem:
+A AGF é o **primeiro nível de suporte**. Isso inclui:
 
-- **Cadastro e configuração inicial de clientes** (criando usuários, senhas e perfis de acesso).  
-- **Fornecimento de suporte** de primeiro nível aos clientes em dúvidas de uso.  
-- **Gestão financeira**, emitindo boletos e controlando o faturamento das postagens.  
-- **Comunicação contínua com o Suporte do Portal Postal**, abrindo chamados quando necessário.
+* **Orientar** sobre como usar a Web do Cliente.
+* **Ajudar** na resolução de dúvidas operacionais comuns.
+* **Coletar informações** detalhadas sobre problemas técnicos e encaminhá-los de forma organizada ao Suporte Especializado do Portal Postal.
 
----
+> **💡 Conhecimento Operacional (Para a Agência):** Seja proativo. Use os relatórios da Web da Agência para identificar clientes que pararam de postar ou cujo volume caiu drasticamente. Pode ser um sinal de alguma dificuldade técnica ou dúvida que eles não reportaram.
 
-### Como a AGF auxilia os clientes no dia a dia?
+### Como configuro os serviços que um cliente pode usar?
 
-A AGF oferece **orientação de uso** sobre as funcionalidades básicas (emissão de etiquetas, consultas de postagens, relatórios) e também realiza **ajustes de configuração** específicos. Quando surgem questões mais técnicas ou complexas, a AGF encaminha o chamado para o **Suporte Especializado do Portal Postal**, servindo de ponto de contato inicial e fornecendo detalhes sobre o problema.
+Dentro do cadastro de cada cliente, na seção de **Contrato**, você pode habilitar ou desabilitar os serviços postais (PAC, SEDEX, etc.) e serviços adicionais (Logística Reversa, AR, etc.) de acordo com o que foi negociado comercialmente.
 
----
-
-### O que a AGF deve fazer quando um cliente enfrenta um problema não resolvido no primeiro nível de suporte?
-
-Caso a dificuldade do cliente vá além do escopo de atendimento inicial, a AGF deve **coletar informações detalhadas** sobre o problema (prints de tela, mensagens de erro, etc.) e **encaminhar o chamado** ao Suporte do Portal Postal, garantindo um atendimento ágil e eficiente.
+> **🗣️ Para Orientar seu Cliente:** Quando um cliente disser "o serviço SEDEX não aparece para mim", este painel de Contrato na Web da Agência é o primeiro lugar que você deve verificar para confirmar se o serviço está realmente habilitado para ele.
 
 ---
 
-## Fluxo de Trabalho
+## 3. Acompanhamento Financeiro
 
-### Como funciona o processo de trabalho dentro do Portal Postal Web Agência?
+### Eu gero as faturas e boletos pela Web da Agência?
 
-1. **Cadastro e Configuração**: A AGF cadastra o cliente, configura serviços habilitados e formas de cobrança.  
-2. **Operação Diária**: Postagens, integrações e relatórios são gerenciados centralmente no sistema, facilitando o acompanhamento.  
-3. **Acompanhamento e Suporte**: A AGF monitora o uso, ajuda em dúvidas e, se necessário, abre chamados.  
-4. **Faturamento e Fechamento**: A AGF emite boletos, gerencia cobranças e mantém o controle financeiro atualizado.  
-5. **Análise e Melhoria Contínua**: A AGF avalia relatórios, indicadores de desempenho e busca melhorias no processo.
+**Não.** A Web da Agência é a sua ferramenta para **monitoramento e análise financeira**. A **geração** das faturas e boletos é uma função do **Consolidador**, que possui a base de dados histórica completa para realizar o cálculo detalhado.
 
----
+### Então, o que eu faço na Web da Agência em relação ao faturamento?
 
-### Posso integrar o Portal Postal Web Agência com marketplaces e sistemas de e-commerce?
+Na Web da Agência, você tem uma visão gerencial completa do ciclo financeiro. Você pode:
 
-Sim. O Portal Postal Web Agência **integra-se com diversos sistemas** de ERP (Bling, Tiny), plataformas de e-commerce (WooCommerce, Shopify) e marketplaces (Mercado Livre, Shopee, VTEX, entre outros). Assim, as informações de vendas e logística ficam centralizadas na plataforma.
-
----
-
-### Como é feito o acompanhamento das postagens dentro do sistema?
-
-Cada postagem gera uma etiqueta com código de rastreamento que pode ser monitorado diretamente no Portal Postal Web Agência. O sistema também oferece **relatórios e indicadores** para que a AGF e seus clientes acompanhem o status e o desempenho das entregas.
-
----
-
-## Gestão Financeira e Contratos
-
-### De que forma a AGF controla o faturamento e as cobranças no Portal Postal Web Agência?
-
-A AGF tem acesso a ferramentas para **emissão de boletos** e para configuração de planos de cobrança, podendo acompanhar receitas e despesas de cada cliente. O sistema também fornece **relatórios financeiros** que mostram o fluxo de caixa e a rentabilidade dos contratos.
-
----
+* **Acompanhar o status das faturas** que foram geradas no Consolidador (abertas, pagas, vencidas).
+* **Analisar relatórios financeiros** detalhados para entender a rentabilidade por cliente.
+* **Visualizar os resultados da conciliação** das informações de postagem com os dados financeiros importados (BDF, C.A.).
 
 ### É possível gerar relatórios financeiros detalhados?
 
-Sim. O Portal Postal Web Agência permite a geração de **relatórios customizados** que incluem:
+Sim. A plataforma oferece um módulo de relatórios onde é possível gerar análises customizadas de receitas, custos por cliente, comparativos de períodos e a performance geral da sua agência.
 
-- Receitas e despesas por cliente  
-- Custos totais de postagens  
-- Comparativo de períodos (mensal, quinzenal etc.)  
-- Performance e rentabilidade das operações  
+> **💡 Conhecimento Operacional (Para a Agência):** Use o relatório de "Rentabilidade por Cliente" para entender quais contratos são mais saudáveis e onde pode haver necessidade de um reajuste de tabela ou uma conversa comercial.
 
 ---
 
-### Posso personalizar as formas de cobrança de cada cliente?
+## 4. Integrações e Relatórios
 
-Sim. A AGF consegue definir diferentes **políticas de precificação** para cada cliente, de acordo com negociações comerciais ou volume de postagens. Esse ajuste é feito no momento do cadastro e pode ser atualizado conforme necessário.
+### Posso integrar a conta de um cliente com marketplaces (Mercado Livre, Shopee)?
 
----
+Sim. Na Web da Agência, dentro do cadastro do cliente, você pode configurar as credenciais de integração com diversas plataformas de e-commerce e marketplaces. Isso permite que seu cliente centralize os pedidos e a emissão de etiquetas na Web do Cliente.
 
-## Vantagens do Portal Postal Web Agência
+> **🗣️ Para Orientar seu Cliente:** Informe ao seu cliente que a integração é configurada por você (AGF), mas que ele precisará fornecer as chaves de API da conta dele no marketplace. Oriente-o sobre como encontrar essas chaves de forma segura.
 
-### Quais são as principais vantagens de utilizar o Portal Postal Web Agência?
+### Como acompanho o desempenho das postagens?
 
-- **Centralização de Informações**: Todas as postagens, contratos, faturas e relatórios em um único ambiente.  
-- **Economia de Tempo**: Processos automatizados de emissão de etiquetas e conferência de faturas.  
-- **Transparência e Controle**: Acompanhamento em tempo real das postagens e do status financeiro.  
-- **Integração Simples**: Conexão com sistemas de ERP, e-commerce e marketplaces.  
-- **Suporte Qualificado**: AGF e Portal Postal atuam em conjunto para oferecer soluções rápidas e eficientes.
+Através do módulo de **Relatórios**, você pode extrair dados sobre o volume de postagens por cliente, por serviço, analisar os prazos de entrega e obter uma visão completa do desempenho logístico.
 
 ---
 
-### Como a plataforma ajuda na redução de custos operacionais?
+## 5. Suporte e Solução de Problemas
 
-Ao **automatizar processos** que antes eram manuais (como emissão de etiquetas, cadastro de clientes e geração de relatórios), a plataforma **diminui retrabalho**, reduz erros e acelera a tomada de decisões. Isso se traduz em **redução de custos** e maior agilidade operacional.
+### O que fazer se um cliente não consegue gerar uma etiqueta?
 
----
+Este é o checklist de diagnóstico mais comum. Verifique na Web da Agência, no cadastro do cliente:
 
-## Suporte e Chamados Técnicos
+1. O **Token da API** está válido e configurado corretamente?
+2. O **contrato com os Correios** está vigente? Um contrato expirado bloqueia a geração de etiquetas.
+3. O **serviço** que ele está tentando usar (ex: SEDEX 12) está habilitado no contrato dele?
+4. O **Token da API** foi sobreposto? Confirme com o cliente se ele não gerou um novo token para outra finalidade, invalidando o que está configurado aqui.
 
-### Qual é o papel do Suporte Especializado do Portal Postal?
+Se tudo estiver correto, o problema pode ser outro e deve ser escalado para o suporte.
 
-O Suporte Especializado do Portal Postal atua em conjunto com a AGF para **resolver problemas mais complexos** e implementar melhorias solicitadas. A AGF encaminha chamadas que não puder atender diretamente, fornecendo informações detalhadas para uma solução eficiente.
+### Como proceder se a plataforma estiver lenta ou indisponível?
 
----
+1. Verifique a estabilidade da sua conexão de internet.
+2. Tente acessar em uma janela anônima do navegador para descartar problemas de cache.
+3. Se o problema continuar, pode ser uma instabilidade geral. Entre em contato com o suporte do Portal Postal para obter informações.
 
-### Como a AGF abre chamados e acompanha o status junto ao Portal Postal?
+### Como abro um chamado para o Suporte Especializado?
 
-1. Acesse o **painel de suporte** no Portal Postal Web Agência.  
-2. **Crie um novo chamado**, descrevendo o problema e anexando evidências (prints, logs, etc.).  
-3. Acompanhe as atualizações e **retorne feedback** sempre que solicitado pelo suporte.  
+Utilize o canal oficial de suporte (Chat Integrado na Web da Agência). Ao abrir o chamado, forneça o máximo de detalhes possível:
 
----
+* Nome da AGF e do cliente afetado.
+* Descrição clara do problema ("O cliente não consegue gerar etiquetas" não é suficiente. Diga "Cliente X não consegue gerar etiqueta SEDEX, erro 'Serviço Inválido' aparece na tela").
+* Capturas de tela (prints) da mensagem de erro.
+* Horário aproximado em que o erro ocorreu.
 
-### Quais são os canais de suporte disponíveis?
-
-- **Chamados via plataforma** (ticket de suporte)  
-- **E-mail ou telefone** de suporte, em horários comerciais  
-- **Central de ajuda online** (documentações e tutoriais)
-
----
-
-## Funcionalidades e Principais Recursos
-
-### Quais recursos de gestão de clientes e contratos estão disponíveis?
-
-- **Cadastro de pessoas físicas e jurídicas**  
-- **Configuração de serviços contratados**  
-- **Emissão de etiquetas e controle de postagens**  
-- **Ferramentas de faturamento e relatórios financeiros**  
-
----
-
-### O que é a Gestão de Logística Reversa no Portal Postal Web Agência?
-
-É um conjunto de funcionalidades para **trocas e devoluções**, permitindo a geração de etiquetas específicas de retorno, além do rastreamento dos objetos de volta ao remetente.
-
----
-
-### Como são gerados relatórios e indicadores de desempenho?
-
-O sistema oferece um módulo de relatórios onde é possível **customizar filtros** (por cliente, serviço, período) e **gerar indicadores** de vendas, custos e rentabilidade. Estes relatórios podem ser **exportados em formatos** como PDF ou Excel.
-
----
-
-## Erros Comuns e Soluções
-
-### O que fazer se os dados de uma etiqueta saem incorretos?
-
-1. Verifique se todos os campos obrigatórios (CEP, UF, nome/razão social) foram preenchidos corretamente.  
-2. Certifique-se de que não há **caracteres especiais** indevidos (como aspas ou sinais) nos campos.  
-3. Caso o erro persista, **entre em contato com o suporte**.
-
----
-
-### Por que ocorre erro ao integrar com sistemas de terceiros?
-
-Isso pode acontecer se as **credenciais de API** estiverem incorretas ou se houver **incompatibilidade de versões**. Verifique as configurações de integração e, se necessário, solicite **suporte especializado** para ajuste.
-
----
-
-### Como proceder se o sistema estiver lento ou indisponível?
-
-- Confirme a estabilidade da sua conexão de internet.  
-- Atualize o navegador para a versão mais recente.  
-- Se o problema continuar, **abra um chamado** com detalhes (horário, mensagem de erro, telas) para análise da equipe de suporte.
-
----
-
-## Conclusão
-
-### Por que o Portal Postal Web Agência é uma solução estratégica para AGFs?
-
-Porque ele **centraliza** todas as operações de uma agência franqueada, **automatiza** tarefas rotineiras, **oferece suporte** em vários níveis (AGF + Portal Postal) e traz **transparência** aos processos de vendas e faturamento. Com isso, a AGF se posiciona de forma mais competitiva e **eficiente** no mercado postal.
-
----
-
-### Onde encontro mais informações e materiais de apoio?
-
-- **Central de Ajuda e Tutoriais** na própria plataforma  
-- **Suporte via chamados** para dúvidas específicas  
-- **Contatos diretos** por e-mail ou telefone (disponíveis no painel de suporte)
-
----
-
-Caso tenha outras dúvidas ou precise de mais detalhes, entre em contato com o **Suporte do Portal Postal** ou consulte os materiais adicionais disponibilizados na plataforma.
+> **💡 Conhecimento Operacional (Para a Agência):** Quanto mais detalhado o chamado (com SROs de exemplo, nome do cliente, horário), mais rápido o suporte especializado poderá diagnosticar e resolver o problema.

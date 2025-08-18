@@ -1,88 +1,83 @@
-# Visão Geral Portal Postal Web Agência
+# Visão Geral da Web da Agência
 
 ---
 
-## Visão Geral do Sistema
+## O que é a Web da Agência?
 
-O **Portal Postal Web Agência** é uma plataforma online direcionada às Agências Franqueadas dos Correios (AGFs), oferecendo ferramentas completas para administração de clientes, gerenciamento de vendas, controle financeiro, emissão de etiquetas, integração com sistemas de terceiros, entre outras funcionalidades.
+A **Portal Postal Web Agência** é a plataforma online de gestão para as Agências Franqueadas dos Correios (AGFs). Ela funciona como o **cérebro administrativo e estratégico** do ecossistema, complementando o trabalho operacional e de faturamento realizado no **Consolidador Local**.
 
-O objetivo principal é otimizar os processos internos da AGF, possibilitando a centralização de informações em um único ambiente, garantindo agilidade, segurança e eficiência na prestação de serviços.
+O seu objetivo é centralizar a gestão de clientes, o **monitoramento do ciclo financeiro (cujas faturas são geradas no Consolidador)** e a análise de dados em um único ambiente online, garantindo à agência uma visão completa e assertiva do negócio.
 
----
-
-## Papel e Responsabilidades da AGF no Portal Postal Web Agência
-
-### 3.1. Cadastro e Configuração Inicial
-
-- **Criação de Credenciais**: A AGF cadastra os clientes no sistema, gerando usuários e senhas iniciais, definindo perfis de acesso conforme a necessidade (administrador ou operacional).
-- **Customização Básica**: Configurar parâmetros essenciais, como dados cadastrais da agência, serviços postais disponíveis e políticas de cobrança, adequando o sistema à realidade de cada AGF.
-
-### 3.2. Suporte e Acompanhamento aos Clientes
-
-- **Orientação de Uso**: A AGF pode fornecer instruções aos clientes sobre funcionalidades básicas, como consulta de postagens, emissão de etiquetas e acompanhamento de envios.
-- **Ajustes de Configuração**: Caso surjam dúvidas ou necessidades específicas, a AGF auxilia na configuração de contas, cadastros de novos serviços e outras customizações.
-
-### 3.3. Gestão Financeira e de Contratos
-
-- **Faturamento**: A AGF gerencia a emissão de boletos e a cobrança das postagens e serviços utilizados pelos clientes, atualizando o sistema conforme as negociações comerciais.
-- **Relatórios de Receita e Despesa**: A plataforma oferece relatórios financeiros que permitem à AGF acompanhar o fluxo de caixa e a rentabilidade dos contratos.
-
-### 3.4. Suporte Técnico de Primeiro Nível
-
-- **Resolução de Dúvidas Comuns**: A AGF está apta a responder questões operacionais do dia a dia, como dificuldade de acesso, emissão de etiquetas e conferência de relatórios.
-- **Encaminhamento de Chamados**: Em situações em que o suporte de primeiro nível não resolve, a AGF direciona o chamado ao Suporte Especializado do Portal Postal, fornecendo todas as informações necessárias para uma resolução rápida.
-
-### 3.5. Comunicação Contínua com o Portal Postal
-
-- **Abertura de Chamados e Feedbacks**: Se houver demandas de melhoria ou correção, a AGF registra e acompanha os chamados junto ao Suporte do Portal Postal.
-- **Atualizações e Novas Funcionalidades**: A AGF recebe as novidades e atualizações do sistema, repassando-as aos clientes quando necessário.
+> **💡 Conhecimento Operacional (Para a Agência):** A Web da Agência é seu ponto central para configurar como seus clientes usarão os serviços e para entender a saúde do seu negócio através de dados consolidados.
 
 ---
 
-## Fluxo de Trabalho no Portal Postal Web Agência
+## Principais Módulos e Funcionalidades
 
-1. **Cadastro e Configuração**  
-   A AGF cadastra o cliente no Portal Postal Web Agência, configura dados contratuais, forma de cobrança, serviços habilitados e credenciais de acesso.
+### Gestão de Clientes e Contratos
 
-2. **Operação Diária**  
-   As transações de postagens, integrações com marketplaces ou ERPs e geração de relatórios financeiros passam a ser centralizadas no sistema, facilitando a gestão e o controle do desempenho da agência.
+A plataforma permite cadastrar e gerenciar o portfólio completo de clientes (pessoas físicas e jurídicas), seus contratos, tabelas de preços, serviços habilitados e a crucial gestão dos tokens de API dos Correios.
 
-3. **Acompanhamento e Suporte**  
-   A AGF monitora o uso do sistema pelos clientes, orientando em dúvidas pontuais e, se necessário, solicitando suporte adicional à equipe do Portal Postal.
+### Configuração da Emissão de Etiquetas
 
-4. **Faturamento e Fechamento**  
-   Ao final de períodos pré-determinados (mensal, quinzenal etc.), a AGF gera as cobranças pelos serviços utilizados, gerenciando a emissão de boletos e mantendo o controle financeiro atualizado.
+Gerencia os contratos, serviços e permissões que habilitam seus clientes a gerarem etiquetas PPN de forma autônoma na **Web do Cliente**. É aqui que você define o que cada cliente pode ou não fazer.
 
-5. **Análise e Melhoria Contínua**  
-   A AGF utiliza relatórios e indicadores para avaliar a produtividade, identificar eventuais gargalos e propor melhorias, garantindo a evolução constante do negócio e do atendimento aos clientes.
+### Acompanhamento Financeiro
+
+Possibilita o cadastro de contas da agência, a importação de dados de conferência (como o Balancete Diário de Faturamento - BDF e arquivos do Correios Atende - C.A.), o **monitoramento das faturas geradas no Consolidador**, a conciliação de pagamentos e o acompanhamento detalhado de todo o fluxo financeiro.
+> **💡 Conhecimento Operacional (Para a Agência):** Embora o Consolidador gere as faturas, a Web da Agência é crucial para você ter uma visão gerencial dos recebíveis, inadimplência e para cruzar os dados financeiros com outros indicadores de performance dos clientes.
+
+### Integrações Externas
+
+Gerencia as integrações com sistemas de ERP (como Bling e Tiny), plataformas de e-commerce (Shopify, WooCommerce) e marketplaces (Mercado Livre, Shopee) dos seus clientes, permitindo que eles consolidem as informações de vendas e logística e gerem etiquetas via Web do Cliente.
+
+### Relatórios e Indicadores de Desempenho
+
+Emite relatórios customizados para análise de vendas, custos, rentabilidade e performance de cada cliente ou serviço, permitindo uma tomada de decisão baseada em dados.
+
+### Gestão de Logística Reversa
+
+Oferece ferramentas para configurar e acompanhar os processos de trocas e devoluções dos seus clientes, que são operacionalizados por eles na Web do Cliente.
 
 ---
 
-## Vantagens do Portal Postal Web Agência
+## O Fluxo de Trabalho na Web da Agência
 
-- **Centralização de Informações**: Todas as postagens, contratos, faturas e relatórios ficam em um único ambiente, evitando retrabalho e inconsistências de dados.
-- **Economia de Tempo**: Tarefas que antes eram manuais passam a ser automatizadas, agilizando processos como emissão de etiquetas e conferência de faturas.
-- **Transparência e Controle**: Possibilidade de acompanhar em tempo real as postagens e o status financeiro, auxiliando na tomada de decisões mais assertivas.
-- **Integração Simples**: A conexão com diversos sistemas externos (ERPs, plataformas de e-commerce, marketplaces) possibilita uma gestão unificada, aumentando o potencial de vendas e simplificando a operação.
-- **Suporte Qualificado**: Além do suporte técnico do Portal Postal, a AGF conta com o próprio conhecimento interno e a proximidade com o cliente para solucionar dúvidas ou problemas rapidamente.
+O uso da plataforma segue os ciclos de gestão da agência:
+
+### 1. Configuração Inicial (Onboarding de Clientes)
+
+A AGF realiza o cadastro de um novo cliente, configura seus dados contratuais (tabela, serviços, token de API dos Correios), define como ele será faturado no Consolidador e cria as credenciais de acesso para a **Web do Cliente**.
+> **💡 Conhecimento Operacional (Para a Agência):** Um onboarding bem feito aqui, com todos os dados do cliente e do contrato Corretos, evita 90% dos problemas futuros de "cliente não consegue gerar etiqueta".
+
+### 2. Rotina Diária: Conciliação e Monitoramento
+
+A principal atividade diária na Web da Agência é a **importação e conferência dos dados do dia anterior**, como o Balancete Diário de Faturamento (BDF) e os arquivos do Correios Atende (C.A.). Isso alimenta seus relatórios e permite identificar divergências rapidamente, garantindo que os dados para o faturamento no Consolidador estejam precisos.
+> **💡 Conhecimento Operacional (Para a Agência):** Esta rotina de importação e conferência de BDF/C.A. na Web da Agência é vital. Ela permite que você identifique rapidamente qualquer divergência entre o que foi postado/faturado (no Consolidador) e o que os Correios processaram.
+
+### 3. Gestão Contínua: Suporte e Análise
+
+Ao longo do mês, a AGF utiliza a plataforma para monitorar o uso dos clientes (volumes, serviços mais usados), dar suporte em questões de acesso ou dúvidas sobre faturas (que foram geradas no Consolidador) e analisar relatórios de desempenho para identificar oportunidades de negócio ou necessidade de ajustes contratuais.
+> **🗣️ Para Orientar seu Cliente:** (Sobre o uso da Web do Cliente) "Estamos acompanhando sua utilização da plataforma. Se notar qualquer dificuldade para gerar suas etiquetas ou se tiver alguma dúvida sobre os serviços disponíveis para você, entre em contato conosco!"
+
+### 4. Monitoramento do Ciclo de Faturamento (Mensal/Quinzenal)
+
+Ao final do período, após o faturamento ser realizado no **Consolidador**, a AGF utiliza a Web da Agência para **acompanhar o ciclo**, validar os totais consolidados, analisar a receita por cliente e verificar o status dos pagamentos.
+> **💡 Conhecimento Operacional (Para a Agência):** Utilize os relatórios financeiros na Web da Agência para cruzar com os dados do seu sistema de gestão financeira interno, caso possua um, e para planejar ações de cobrança.
+
+---
+
+## Papel e Responsabilidades da Agência
+
+* **Gestão Comercial e de Contratos:** É responsabilidade da AGF manter os dados contratuais (incluindo tabelas de preços, serviços habilitados e Tokens da API) e a vigência dos contratos dos clientes sempre atualizados na plataforma.
+    > **💡 Conhecimento Operacional (Para a Agência):** Manter o Token da API do cliente CORRETO e ATUALIZADO aqui é o principal passo para evitar problemas de "cliente não consegue gerar etiqueta". Crie um processo para validar tokens com os clientes periodicamente.
+* **Suporte Financeiro (Orientação):** A agência é o ponto de contato principal para esclarecer dúvidas dos clientes sobre as faturas (valores, itens cobrados) geradas no Consolidador.
+    > **🗣️ Para Orientar seu Cliente:** "Sua fatura detalhada é gerada em nosso sistema interno (Consolidador) e enviada a você. Qualquer dúvida sobre os valores ou serviços cobrados, pode nos contatar diretamente."
+* **Apoio na Configuração e Uso:** Auxilia os clientes na configuração inicial e na resolução de dúvidas relacionadas ao uso da Web do Cliente, direcionando chamados técnicos complexos ao suporte especializado do Portal Postal.
+* **Comunicação de Melhorias:** Atua como um canal de feedback, registrando sugestões de melhoria e acompanhando as atualizações da plataforma para manter seus clientes informados.
 
 ---
 
 ## Conclusão
 
-O **Portal Postal Web Agência** representa a solução ideal para as AGFs que desejam unificar e otimizar seus processos de venda, atendimento e gerenciamento de clientes. Com uma abordagem completa e integrada, a plataforma fornece as ferramentas necessárias para que a agência mantenha alto nível de eficiência, transparência e satisfação para seu público.
-
-Com isso, a AGF assume um papel estratégico na gestão do negócio postal, atuando como ponto de contato principal para implementação, suporte e evolução contínua dos serviços disponíveis no Portal Postal.
-
----
-
-## Funcionalidades e Principais Recursos
-
-- **Gestão de Clientes e Contratos**: A plataforma permite cadastrar e gerenciar todos os clientes (pessoas físicas e jurídicas), bem como seus contratos e serviços contratados.
-- **Emissão e Impressão de Etiquetas**: Facilita a geração de etiquetas de postagens de forma ágil, integrando-se aos serviços dos Correios e, quando aplicável, a sistemas de terceiros.
-- **Controle Financeiro**: Possibilidade de cadastrar contas, configurar cobranças, emitir boletos e acompanhar relatórios financeiros detalhados, de forma a manter o fluxo de caixa organizado.
-- **Integrações Externas**: Integração com sistemas de ERP (como Bling e Tiny), plataformas de e-commerce (WordPress, Shopify, WooCommerce), marketplaces (Mercado Livre, Shopee, VTEX) e outros ambientes, permitindo a consolidação das informações de vendas e logística.
-- **Relatórios e Indicadores de Desempenho**: Emissão de relatórios customizados para análise de vendas, custos, rentabilidade e performance de cada cliente ou serviço.
-- **Gestão de Logística Reversa**: Ferramentas de controle para trocas e devoluções, possibilitando a geração de etiquetas e rastreamento de objetos de retorno.
-
----
+A **Web da Agência** é a solução definitiva para AGFs que buscam profissionalizar a gestão do seu negócio. Ao centralizar as tarefas administrativas e estratégicas, e ao se integrar com o **Consolidador** (para operações e faturamento) e com a **Web do Cliente** (para autoatendimento), a plataforma fornece as ferramentas necessárias para que a agência cresça com eficiência, transparência e controle total sobre seu relacionamento com clientes e suas finanças.

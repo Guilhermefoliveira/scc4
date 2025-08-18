@@ -1,11 +1,5 @@
 require('dotenv').config();
 
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -60,7 +54,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -133,18 +126,12 @@ const config = {
             items: [
               {
                 label: 'Instagram',
-                href: '/', // Consider updating this to your Instagram profile URL
+                href: 'https://www.instagram.com/portal_postal/', 
               },
             ],
           },
         ],
-        // Adicionando a logo no rodapé
-        /* logo: {
-          alt: '',
-          src: 'img/LogoBranco.svg', // Caminho para o arquivo SVG da logo
-          href: '/', // Opcional: link que será aberto ao clicar na logo
-        }, */
-        copyright: `Copyright © ${new Date().getFullYear()} SCC4 Docs.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SCC4 Docs. Desenvolvido por Guilherme Oliveira.`,
       },
       
       prism: {

@@ -1,47 +1,59 @@
 ---
-sidebar_position: 0
+sidebar_position: 1
 ---
 
 # Acesso ao Sistema Portal Postal Web - Cliente
 
-## Acesso
+Este guia é para a equipe da Agência Franqueada (AGF) e detalha como seu cliente acessa a plataforma **Portal Postal Web - Cliente**. Entender este processo é fundamental para que você possa orientá-lo e oferecer o suporte necessário.
 
-Após a implantação do sistema, o cliente final terá acesso à plataforma por meio de uma URL específica e credenciais iniciais. Antes disso, a AGF (Agência Franqueada) executa as etapas iniciais necessárias para que o cliente possa utilizar o sistema, realizando o cadastro dos usuários administradores e de um usuário padrão, além de outras configurações básicas.
+## Acesso à Plataforma pelo Cliente
+
+Após sua AGF realizar o cadastro e as configurações iniciais na **Web da Agência**, seu cliente final receberá as credenciais para acessar a plataforma Web do Cliente através de uma URL específica.
 
 ### Acesso via Navegador
 
-- **Tela de Acesso**, exemplo: [![Tela de Login Web Agência](../../static/img/web_cliente/login-pp.png "Tela de Login Web Agência")](https://guilhermefoliveira.github.io/scc4/assets/images/login-pp-91d3492c3e3c106d52a983f30202b73e.png)
-- **URL de Acesso:** [https://portalpostal.com.br/v2/extra/login](https://portalpostal.com.br/v2/extra/login)
+Seu cliente utilizará um navegador de internet para acessar a plataforma.
 
-Acesse o sistema utilizando um navegador de internet (Chrome, Firefox ou outro de sua preferência), digitando o endereço acima.
+* **URL de Acesso para o Cliente:** `https://portalpostal.com.br/v2/extra/login` (Ou a URL específica configurada para seus clientes, caso seja diferente).
+* **Instruções para o Cliente:** Oriente-o a digitar o endereço acima em um navegador de internet atualizado (Chrome, Firefox, Edge, Safari).
 
-#### Credenciais de Acesso Iniciais
+> [![Tela de Login da Web da Agência](/img/web_cliente/login-pp.png)](/img/web_cliente/login-pp.png)
+> *Tela de Login da Web da Agência*
 
-Essas credenciais são fornecidas após a AGF concluir o cadastro inicial:
+#### Credenciais de Acesso Iniciais (Definidas pela AGF)
 
-- **Administrador:**
-  - **Usuário:** [admin@example.com](mailto:admin@example.com)
-  - **Senha:** senha_admin
-- **Usuário Padrão:**
-  - **Usuário:** [usuario@example.com](mailto:usuario@example.com)
-  - **Senha:** senha_usuario
+As credenciais (usuário e senha) para o primeiro acesso do cliente são **criadas por você, AGF, na Web da Agência**, durante o processo de cadastro do cliente. Você fornecerá essas credenciais a ele.
 
-Ao efetuar o primeiro login, recomenda-se alterar a senha padrão para garantir a segurança da conta.
+* **Exemplos de credenciais iniciais que a AGF pode definir:**
+  * **Administrador do Cliente:**
+    * Usuário: (Ex: `contato@empresa_cliente.com.br`)
+    * Senha: (Ex: `Cliente@1234`)
+  * **Usuário Padrão do Cliente:**
+    * Usuário: (Ex: `operador@empresa_cliente.com.br`)
+    * Senha: (Ex: `Usuario@1234`)
 
-### Recuperação de Senha
+> **🗣️ Para Orientar seu Cliente:** "Olá, [Nome do Cliente]! Seu acesso à nossa plataforma de envios está pronto. Para acessar, utilize a URL **`https://portalpostal.com.br/v2/extra/login`** (ou informe aqui a URL correta, se for diferente) com o usuário '[usuário do cliente]' e a senha inicial '[senha inicial]'. Por segurança, recomendamos fortemente que você altere esta senha assim que fizer o primeiro login. Lá você poderá gerar suas etiquetas PPN e gerenciar seus envios de forma fácil!"
 
-Em caso de esquecimento da senha, o usuário deverá entrar em contato com a sua AGF Responsável, que auxiliará na redefinição de acesso.
+> **💡 Conhecimento Operacional (Para a Agência):** Lembre-se sempre que a criação e a gestão inicial dos usuários dos seus clientes (para a Web do Cliente deles) é feita por você no módulo de "Cadastro de Clientes" da **Web da Agência**. É uma boa prática confirmar a URL de acesso correta para os clientes, caso haja alguma variação.
 
-#### Passo a passo
+### Recuperação de Senha do Cliente
 
-1. **Contato com a AGF:**
-   Entre em contato com a sua Agência Responsável por meio do canal indicado (ex.: e-mail ou telefone).
-2. **Verificação de Identidade:**
-   Para fornecer suporte, a Agência poderá solicitar informações básicas para confirmar a identidade do titular da conta.
-3. **Envio do Link de Redefinição:**
-   Após a confirmação da identidade, será enviado um link temporário para redefinição de senha.
-4. **Redefinição da Senha:**
-   Acesse o link e crie uma nova senha. A senha é armazenada de forma criptografada.
+Se o seu cliente esquecer a senha de acesso à Web do Cliente, ele deverá entrar em contato com a sua AGF.
 
-**Conformidade com a LGPD:**  
->Este processo segue os princípios básicos da Lei Geral de Proteção de Dados, preservando a privacidade e a segurança das informações pessoais do usuário.
+#### Processo de Recuperação
+
+1. **Contato do Cliente com a AGF:**
+    > **🗣️ Para Orientar seu Cliente:** "Se você esqueceu sua senha, por favor, entre em contato conosco aqui na agência pelo telefone [seu telefone] ou e-mail [seu e-mail de suporte]."
+2. **Verificação de Identidade (Feita pela AGF):**
+    > **💡 Conhecimento Operacional (Para a Agência):** Antes de redefinir uma senha, sempre confirme a identidade do solicitante. Peça informações que apenas o contato principal da empresa cliente saberia (ex: CNPJ, último serviço utilizado, nome do responsável pelo contrato).
+3. **Redefinição de Senha (Executada pela AGF na Web da Agência):**
+    > **💡 Conhecimento Operacional (Para a Agência):** Acesse a **Web da Agência**, localize o cadastro do cliente e, na seção de gerenciamento de usuários dele, utilize a função para redefinir a senha. Você poderá gerar uma senha temporária ou um link de redefinição para enviar ao cliente.
+4. **Comunicação com o Cliente:**
+    > **🗣️ Para Orientar seu Cliente:** (Após redefinir) "Pronto! Sua senha foi redefinida. A nova senha temporária é '[nova senha temporária]' e você deverá alterá-la no seu primeiro acesso. Se você recebeu um link por e-mail, basta clicar nele e seguir as instruções para criar uma nova senha."
+5. **Redefinição Final (Pelo Cliente):**
+    O cliente acessa a Web do Cliente com a senha temporária (e a altera) ou clica no link recebido e cria sua nova senha.
+
+**Conformidade com a LGPD:**
+> **💡 Conhecimento Operacional (Para a Agência):** Ao lidar com dados de acesso, sempre reforce a importância da Lei Geral de Proteção de Dados. Garanta que os processos internos da sua AGF para verificação de identidade e comunicação de senhas sejam seguros e preservem a privacidade do cliente.
+
+---
